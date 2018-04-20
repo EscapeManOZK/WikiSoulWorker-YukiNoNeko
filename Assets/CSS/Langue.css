@@ -1,9 +1,6 @@
 .NotLangue{
     display: none;
 }
-.DP{
-    height: 70px;
-}
 .select-wrapper select{
     background: rgba(255,255,255,0);
     padding: 10px;
@@ -11,4 +8,14 @@
     margin: auto;
     -webkit-appearance:none;
     outline:none;
+}
+span#FR{
+
+    background: url("../images/frLogo.jpg") no-repeat;
+    height:30px;
+    width: 55px;
+}
+span#EN{
+    background: url("../images/enLogo.jpg") no-repeat;
+    height:25px;
 }
