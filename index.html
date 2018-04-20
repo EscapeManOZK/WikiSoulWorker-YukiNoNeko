@@ -11,80 +11,79 @@
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="vendor/CSS/simple-sidebar.css" rel="stylesheet">
+    <link href="CSS/simple-sidebar.css" rel="stylesheet">
+    <link href="CSS/Langue.css" rel="stylesheet">
+    <script type="text/javascript" src="JS/Main.js"></script>
 
 </head>
 
 <body>
 
-    <div id="wrapper" class="toggled">
+<div id="wrapper" class="toggled">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper" >
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html">Start Bootstrap</a>
-                </li>
-                <li>
-                    <a href="">Dashboard</a>
-                </li>
-                <li>
-                    <a href="">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="">Overview</a>
-                </li>
-                <li>
-                    <a href="">Events</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="">Services</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-                <li>
-                    <form class="sidebar-brand">
-                        <select>
-                            <option id="FR">fr</option>
-                            <option id="EN">en</option>
-                        </select>
-                    </form>
-                </li>
-            </ul>
-
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" >
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="index.html">Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="">Dashboard</a>
+            </li>
+            <li>
+                <a href="">Shortcuts</a>
+            </li>
+            <li>
+                <a href="">Overview</a>
+            </li>
+            <li>
+                <a href="">Events</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Services</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+            <li>
+                <form class="sidebar-brand">
+                    <select id="Langue">
+                        <option value="FR">fr</option>
+                        <option value="EN">en</option>
+                    </select>
+                </form>
+            </li>
+        </ul>
 
     </div>
-    <!-- /#wrapper -->
+    <!-- /#sidebar-wrapper -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
+        <div class="container-fluid">
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+
+<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="JS/Menu_deroulant.js"></script>
 
 </body>
 
