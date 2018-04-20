@@ -11,12 +11,11 @@
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="CSS/simple-sidebar.css" rel="stylesheet">
-    <link href="CSS/Langue.css" rel="stylesheet">
-    <script type="text/javascript" src="JS/Main.js"></script>
+    <link href="Assets/CSS/simple-sidebar.css" rel="stylesheet">
+    <link href="Assets/CSS/Langue.css" rel="stylesheet">
 
 </head>
 
@@ -53,10 +52,12 @@
             </li>
             <li>
                 <form class="sidebar-brand">
-                    <select id="Langue">
-                        <option value="FR">fr</option>
-                        <option value="EN">en</option>
-                    </select>
+                    <div class="select-wrapper">
+                        <select id="Langue">
+                            <option value="FR" class="DP"><img href="Assets/images/FR.jpg" /></option>
+                            <option value="EN" class="DP"><img href="Assets/images/EN.jpg"/></option>
+                        </select>
+                    </div>
                 </form>
             </li>
         </ul>
@@ -67,23 +68,19 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
+        <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
         <div class="container-fluid">
 
-            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
         </div>
     </div>
     <!-- /#page-content-wrapper -->
 
 </div>
-<!-- /#wrapper -->
 
-<!-- Bootstrap core JavaScript -->
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Menu Toggle Script -->
-
-<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="JS/Menu_deroulant.js"></script>
+<script type="text/javascript" src="Assets/JS/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="Assets/JS/Menu_deroulant.js"></script>
+<script type="text/javascript" src="Assets/JS/Main.js"></script>
+<script src="Assets/bootstrap/js/bootstrap.js"></script>
 
 </body>
 

@@ -1,0 +1,14 @@
+.NotLangue{
+    display: none;
+}
+.DP{
+    height: 70px;
+}
+.select-wrapper select{
+    background: rgba(255,255,255,0);
+    padding: 10px;
+    border: 0px solid black;
+    margin: auto;
+    -webkit-appearance:none;
+    outline:none;
+}
