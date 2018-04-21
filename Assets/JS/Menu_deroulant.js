@@ -8,3 +8,19 @@ function affiche() {
         $(".textFR").addClass("NotLangue");
     }
 }
+function formatState (state) {
+    if (!state.id) {
+        return state.text;
+    }
+    var baseUrl = "../images";
+    var $state = $(
+        '<span><img src="' + baseUrl + '/' + state.element.value + 'Logo.png" class="img-flag" /> ' + state.text + '</span>'
+    );
+    return $state;
+};
+
+$("#Langue").select2({
+    templateSelection: formatState,
+    theme: "classic"
+});
+
