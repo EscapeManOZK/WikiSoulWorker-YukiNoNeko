@@ -27,16 +27,7 @@ span#EN{
     width: 18px;
 
 }
-#AllPerso{
-    display: none;
-}
+
 #AllPerso ul li{
-    list-style: none;
     font-size: 14px;
-}
-#AllPerso ul{
-    padding-left: 0px;
-}
-#AllPerso ul li a{
-    padding-left: 15px;
 }

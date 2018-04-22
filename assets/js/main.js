@@ -1,10 +1,10 @@
-var lenght=1;
+
 $(document).ready(function(){
+    affiche();
+
     $("#Langue").on("change",affiche);
-    $("#Perso").hover(  function() {
-            $("#AllPerso").slideDown("slow");
-        }, function() {
-            $("#AllPerso").slideUp("slow");
+    $("#Perso > a").on("click",  function() {
+            $("#AllPerso").toggle("slow");
         }
     );
 });
