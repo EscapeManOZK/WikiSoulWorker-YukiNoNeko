@@ -1,3 +1,3 @@
 #sidebar-wrapper {
-    background: url("../images/fondBarreHaru.jpg") no-repeat fixed;
+    background:  url("../images/fondBarreHaru.jpg") no-repeat fixed, url("../images/fondBarreNoir.jpg") repeat-y fixed;
 }

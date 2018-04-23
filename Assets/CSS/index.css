@@ -1,6 +1,3 @@
 #sidebar-wrapper {
-    background: url("../images/fondBarreAccueil.jpg") no-repeat fixed;
-}
-#AllPerso{
-    display: none;
+    background: url("../images/fondBarreAccueil.jpg") no-repeat fixed,  url("../images/fondBarreNoir.jpg") repeat-y fixed;
 }
