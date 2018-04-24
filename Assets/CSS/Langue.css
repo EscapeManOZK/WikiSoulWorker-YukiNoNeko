@@ -8,18 +8,11 @@
     margin: auto;
     -webkit-appearance:none;
     outline:none;
-    color: #6c757d;
+    color: rgb(240,240,240);
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0px 0px 5px 5px;
 }
-span#FR{
 
-    background: url("../images/FRLogo.jpg") no-repeat;
-    height:30px;
-    width: 55px;
-}
-span#EN{
-    background: url("../images/ENLogo.jpg") no-repeat;
-    height:25px;
-}
 .img-flag{
     margin: 0 !important;
     display: inherit !important;
@@ -29,5 +22,5 @@ span#EN{
 }
 
 #AllPerso ul li{
-    font-size: 14px;
+    font-size: 13px;
 }
