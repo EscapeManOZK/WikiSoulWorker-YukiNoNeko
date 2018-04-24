@@ -18,6 +18,9 @@
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
     <link href="../Assets/CSS/Langue.css" rel="stylesheet">
     <link href="../Assets/CSS/Contact.css" rel="stylesheet">
+    <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Main.js"></script>
 </head>
 
 <body>
@@ -79,18 +82,35 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
-            <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
-            <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
+            <!--
+            <span class="textFR"></span>
+            <span class="textEN NotLangue" ></span>
+            -->
+            <header>
+                <h1>
+                    <span class="textFR">Vous avez envie de contribuer au développement du Wiki ?</span>
+                    <span class="textEN NotLangue" >i</span>
+                </h1>
+                <h4>
+                    <span class="textFR">Pour cela remplis les champs si dessus</span>
+                    <span class="textEN NotLangue" ></span>
+                </h4>
+            </header>
+            <div id="#content">
+                <p><label for="mail">Votre mail : </label> <input type="email" name="mail" id="mail" placeholder="Ex : Exemple@gmail.com"/></p>
+                <p><label for="title">Le titre de votre mail :</label> <input type="text" name="title" id="title" maxlength="50" placeholder="Ex: Info sur la dernière mise à jour"></p>
+                <p><label for="corp">Le corp du mail <br> <span id="descrip">Pour rajouter des images mettez img="[le_lien_de_l'image]" et assurez vous que vous poussez les droits d'auteurs sur les images</span></label> <textarea name="corp" id="corp"></textarea></p>
+                <button id="sendIt">Envoyer</button>
+            </div>
+            <footer>
 
+            </footer>
         </div>
     </div>
     <!-- /#page-content-wrapper -->
 
 </div>
 
-<script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
-<script type="text/javascript" src="../Assets/JS/Main.js"></script>
 
 </body>
 

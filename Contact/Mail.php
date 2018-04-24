@@ -9,7 +9,7 @@
     <meta name="author" content="Rowczarek">
     <link rel="icon" type="image/png" href="../Assets/images/logo.png" />
 
-    <title>Soulworker Wiki - Objets</title>
+    <title>Soulworker Wiki - Contact</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
     <link href="../Assets/CSS/Langue.css" rel="stylesheet">
-    <link href="../Assets/CSS/Objets.css" rel="stylesheet">
+    <link href="../Assets/CSS/Contact.css" rel="stylesheet">
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
@@ -82,16 +82,19 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
-            <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
-            <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
-
+            <!--
+            <span class="textFR"></span>
+            <span class="textEN NotLangue" ></span>
+            -->
+            <img src="../Assets/images/images.png"
         </div>
     </div>
     <!-- /#page-content-wrapper -->
 
 </div>
+<?php
 
-
+?>
 
 </body>
 
