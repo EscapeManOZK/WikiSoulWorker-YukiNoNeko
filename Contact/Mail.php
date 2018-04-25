@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -86,14 +86,24 @@
             <span class="textFR"></span>
             <span class="textEN NotLangue" ></span>
             -->
-            <img src="../Assets/images/images.png"
+            <p id="imgcharg"><img src="../Assets/images/sendmail2.gif" id="sendMail"/></p>
         </div>
     </div>
     <!-- /#page-content-wrapper -->
 
 </div>
 <?php
-
+ini_set("SMTP","smtp.fournisseur.fr");
+ini_set("smtp_port","25");
+$destinataire = "mail@soulworker-wiki.com";
+$objet        = utf8_decode("Envoi de texte brut à partir de PHP");
+$message      = "ça réussit !!!";
+$entetes  = "Content-Type: text/plain; charset=UTF-8\r\n";
+$entetes .= "Cc: copie@laposte.net\r\n";
+$entetes .= "From: emetteur@free.fr\r\n";
+$bOk = mail($destinataire, $objet, $message, $entetes);
+if($bOk) echo "Mail 1 envoy&eacute; avec succ&egrave;s";
+else echo "Erreur d'envoi du Mail 1";
 ?>
 
 </body>

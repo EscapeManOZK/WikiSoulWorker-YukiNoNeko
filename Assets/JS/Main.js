@@ -1,20 +1,11 @@
 var etatmanu=false;
 
-function mail() {
-    var m_mail = $("#mail").val();
-    var titre =$("#title").val();
-    var corp =$("#corp").val();
-    $.ajax({
-       url: "/Contact/Mail.php",
-       type:  "post",
-        data: {Mail: m_mail,Titre: titre,Corp: corp}
-    });
-    //window.open("MAILTO:mail@soulworker-wiki.com?subject=" + titre + "&body=" + corp);
-}
+var lang;
+var list;
 
 $(document).ready(function() {
-    var lang = $_GET("lang");
-    var list = $_GET("List");
+    lang = $_GET("lang");
+    list = $_GET("List");
     if (lang != null) {
         if (lang == "FR") {
             $("#FR").attr("selected","selected");
@@ -36,7 +27,7 @@ $(document).ready(function() {
         if(etatmanu)etatmanu=false;else etatmanu=true;
         affiche();
     });
-    $("#sendIt").on("click", mail);
+
 });
 
 function $_GET(param) {

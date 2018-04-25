@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -21,6 +21,7 @@
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Mail.js"></script>
 </head>
 
 <body>
@@ -99,8 +100,9 @@
             <div id="#content">
                 <p><label for="mail">Votre mail : </label> <input type="email" name="mail" id="mail" placeholder="Ex : Exemple@gmail.com"/></p>
                 <p><label for="title">Le titre de votre mail :</label> <input type="text" name="title" id="title" maxlength="50" placeholder="Ex: Info sur la dernière mise à jour"></p>
-                <p><label for="corp">Le corp du mail <br> <span id="descrip">Pour rajouter des images mettez img="[le_lien_de_l'image]" et assurez vous que vous poussez les droits d'auteurs sur les images</span></label> <textarea name="corp" id="corp"></textarea></p>
+                <p><label for="corp">Le corp du mail <br> <span class="descrip">Pour rajouter des images mettez img="[le_lien_de_l'image]" et assurez vous que vous poussez les droits d'auteurs sur les images</span></label> <br> <textarea name="corp" id="corp"></textarea></p>
                 <button id="sendIt">Envoyer</button>
+                <p id="Error"></p>
             </div>
             <footer>
 
