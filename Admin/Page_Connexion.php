@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="author" content="Rowczarek">
     <link rel="icon" type="image/png" href="../Assets/images/logo.png" />
 
-    <title>Soulworker Wiki - Combats</title>
+    <title>Soulworker Wiki - Contact</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
     <link href="../Assets/CSS/Langue.css" rel="stylesheet">
-    <link href="../Assets/CSS/Combats.css" rel="stylesheet">
+    <link href="../Assets/CSS/index.css" rel="stylesheet">
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
@@ -82,16 +82,38 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
-            <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
-            <header><h1><span class="textFR">je</span><span class="textEN NotLangue" >i</span> </h1></header>
-
+            <!--
+            <span class="textFR"></span>
+            <span class="textEN NotLangue" ></span>
+            -->
+            <?php
+            if(isset($_COOKIE['user'])){
+                if ($_COOKIE['user']!="") {
+                    echo "<script type='text/javascript'>document.location.replace('index.php');</script>";
+                }
+            }
+            ?>
+            <form method="post" action="Connexion.php">
+            <p>
+                <label for="user">Login :   </label>
+                <input type="text" name="user" id="user" placeholder="Identifiant" size="30" maxlength="20" required="required" />
+                </br>
+                <label for="mdp">Mot de passe :</label>
+                <input type="password" name="mdp" id="mdp" placeholder="••••••••" size="30" maxlength="20" required="required"/>
+                </br>
+            </p>
+            <input type="submit" value="Connexion">
+        </form>
+            <?php
+            if (isset($_GET['error'])){
+                echo  "<p>Erreur Identifiant ou Mot de passe incorrect</p>";
+            }
+            ?>
         </div>
     </div>
     <!-- /#page-content-wrapper -->
 
 </div>
-
-
 
 </body>
 

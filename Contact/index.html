@@ -98,11 +98,26 @@
                 </h4>
             </header>
             <div id="#content">
-                <p><label for="mail">Votre mail : </label> <input type="email" name="mail" id="mail" placeholder="Ex : Exemple@gmail.com"/></p>
-                <p><label for="title">Le titre de votre mail :</label> <input type="text" name="title" id="title" maxlength="50" placeholder="Ex: Info sur la dernière mise à jour"></p>
-                <p><label for="corp">Le corp du mail <br> <span class="descrip">Pour rajouter des images mettez img="[le_lien_de_l'image]" et assurez vous que vous poussez les droits d'auteurs sur les images</span></label> <br> <textarea name="corp" id="corp"></textarea></p>
+                <p><label for="mail">Votre mail : </label></p>
+                <div>
+                    <input type="email" name="mail" id="mail" placeholder="Ex : Exemple@gmail.com"/>
+                    <p id="mailError">Le mail est incorrect</p>
+                </div>
+
+                <p><label for="title">Le titre de votre mail :</label></p>
+                <div>
+                    <input type="text" name="title" id="title" maxlength="50" placeholder="Ex: Info sur la dernière mise à jour">
+                    <p id="TitreError">Ce champ est obligatoire</p>
+                </div>
+
+                <p><label for="corp">Le corp du mail <br> <span class="descrip">Pour rajouter des images mettez img="[le_lien_de_l'image]" et assurez vous que vous poussez les droits d'auteurs sur les images</span></label></p>
+                <div>
+                    <textarea name="corp" id="corp"></textarea>
+                    <p id="CorpError">Ce champ est obligatoire</p>
+                    <p id="ImageError">Veillez insérez des images correct</p>
+                </div>
+
                 <button id="sendIt">Envoyer</button>
-                <p id="Error"></p>
             </div>
             <footer>
 

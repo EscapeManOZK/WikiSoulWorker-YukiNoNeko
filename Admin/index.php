@@ -17,24 +17,11 @@
     <!-- Custom styles for this template -->
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
     <link href="../Assets/CSS/Langue.css" rel="stylesheet">
-    <link href="../Assets/CSS/Contact.css" rel="stylesheet">
+    <link href="../Assets/CSS/index.css" rel="stylesheet">
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
 </head>
-<script type="text/javascript">
-    function anim(){
-            if ($("#text5").css("display")!="none"){
-                $("#text4").slideUp();
-            }else if ($("#text4")!=null && $("#text2").css("display")!="none"){
-                $("#text3").slideUp();
-            }else if ($("#text3")!=null && $("#text2").css("display")!="none"){
-                $("#text2").slideUp();
-            }else if ($("#text2")!=null && $("#text2").css("display")!="none"){
-                $("#text1").slideUp();
-            }
-    }
-</script>
 
 <body>
 
@@ -91,60 +78,69 @@
 
     </div>
     <!-- /#sidebar-wrapper -->
-
     <!-- Page Content -->
+
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <!--
             <span class="textFR"></span>
             <span class="textEN NotLangue" ></span>
             -->
-            <p id="imgcharg"><img src="../Assets/images/sendmail2.gif" id="sendMail"/></p>
-            <p ><span class="textFR">Envoie du mail</span><span class="textEN NotLangue">Send Email</span></p>
+            <h1>Voici la page de gestion des mail</h1>
+            <?php
+            if(isset($_COOKIE['user'])){
+                if ($_COOKIE['user']!="") {
+                    echo "<h5>Bonjour " . $_COOKIE['user'] . "</h5>";
+                }else{
+                    echo "<script type='text/javascript'>document.location.replace('Page_Connexion.php');</script>";
+                }
+            }else {
+                echo "<script type='text/javascript'>document.location.replace('Page_Connexion.php');</script>";
+            }
+            ?>
+            <table>
+                <thead>
+                <tr>
+                    <td>Mail</td>
+                    <td>Titre</td>
+                    <td>Detail</td>
+                    <?php
+                    if ($_COOKIE['role']=='1'){
+                        echo "<td>Supprimer</td>";
+                    }
+                    ?>
+                </tr>
+                </thead>
+                <?php
+                $inser = false;
+                $user = 'id5461842_escapeman';
+                $password = 'Romozk17r-BD000';
+                // Chaîne de connexion (Windows)
+                $pdodsn = "mysql:host=localhost;dbname=id5461842_mail";
+                $pdo = new PDO($pdodsn, $user, $password);
+                $requete = "SELECT * FROM `Mail` ";
+                foreach ($pdo->query($requete) as $row) {
+                    if($row!=null) {
+                        $inser=true;
+                        echo "<tr><td>{$row['Mail']}</td><td>{$row['Titre']}</td><td><a href='Mail.php?id={$row['ID']}'>Le mail</a> </td>";
+                        if ($_COOKIE['role']=='1'){
+                            echo "<td><a href='Delete.php?id={$row['ID']}'>Supprimer</a></td>";
+                        }
+                        echo "</tr>";
+                    }
+                }
+                if (!$inser){
+                    if ($_COOKIE['role']=='1') {
+                        echo "<tr><td colspan='4'>Pas de mail</td></tr>";
+                    }else{
+                        echo "<tr><td colspan='3'>Pas de mail</td></tr>";
+                    }
+                }
+                ?>
+            </table>
+            <p><button onclick="document.location.replace('Deconnexion.php');">Se déconnecter</button></p>
         </div>
     </div>
-<?php
-$mail = $_GET['mail'];
-$titre = $_GET['titre'];
-$corp = $_GET['corp'];
- // Paramètres de connexio
-  $user = 'id5461842_escapeman';
-  $password = 'Romozk17r-BD000';
-  // Chaîne de connexion (Windows)
-  $pdodsn = "mysql:host=localhost;dbname=id5461842_mail";
-  // Chaîne de connexion (Linux)
-  //$pdodsn = "dblib:version=7.0;charset=UTF-8;host=$host;dbname=$nomDb";
-  // Connexion PDO
-  $pdo = new PDO($pdodsn, $user, $password);
-
-  $req = "INSERT INTO Mail (Mail, Titre, Corp) VALUES('{$mail}','{$titre}','{$corp}')";
-  $pdo->query($req);
-
-  $pdo = null;
-$lang = $_GET['lang'];
-$list = $_GET['List'];
-if ($_GET['img']=="true"){
-if ($lang=="FR"){
-$corp .="\n Ce message agis comme un contrat donc de ce fais si vous ne possédais pas les droit sur les images vous en serrez responsable";
-}else{
-$corp .="\n \nThis message acts as a contract so if you did not own the rights to the images you will be responsible";
-}
-}
-
-ini_set("SMTP","smtp.fournisseur.fr");
-ini_set("smtp_port","25");
-$destinataire = "mail@soulworker-wiki.com";
-$objet        = utf8_decode($titre);
-$message      = $corp;
-$entetes  = "Content-Type: text/plain; charset=UTF-8\r\n";
-$entetes .= "Cc: ".$mail."\r\n";
-$entetes .= "From: soulworkerwiki@bot.fr\r\n";
-$bOk = mail($destinataire, $objet, $message, $entetes);
-$url="index.html?lang=".$lang."&List=".$list."&return=".$bOk;
-//if($bOk) echo "Mail 1 envoy&eacute; avec succ&egrave;s";
-//else echo "Erreur d'envoi du Mail 1";
-echo "<script type='text/javascript'>document.location.replace('".$url."');</script>";
-?>
     <!-- /#page-content-wrapper -->
 
 </div>
