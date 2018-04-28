@@ -18,6 +18,7 @@
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
     <link href="../Assets/CSS/Langue.css" rel="stylesheet">
     <link href="../Assets/CSS/Contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/Bouton.css">
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
@@ -90,34 +91,49 @@
             <header>
                 <h1>
                     <span class="textFR">Vous avez envie de contribuer au développement du Wiki ?</span>
-                    <span class="textEN NotLangue" >i</span>
+                    <span class="textEN NotLangue" >Do you want to contribute to the development of the Wiki?</span>
                 </h1>
                 <h4>
-                    <span class="textFR">Pour cela remplis les champs si dessus</span>
-                    <span class="textEN NotLangue" ></span>
+                    <span class="textFR">Pour cela remplissez les champs ci-dessous</span>
+                    <span class="textEN NotLangue" >For this fill in the fields below</span>
                 </h4>
             </header>
-            <div id="#content">
-                <p><label for="mail">Votre mail : </label></p>
-                <div>
-                    <input type="email" name="mail" id="mail" placeholder="Ex : Exemple@gmail.com"/>
-                    <p id="mailError">Le mail est incorrect</p>
+            <div id="content">
+                <div id="ChampEmail">
+                    <p><label for="mail"><span class="textFR">Votre mail : </span>
+                        <span class="textEN NotLangue" >Your email : </span></label></p>
+                    <div class="div-champ">
+                        <input type="email" name="mail" id="mail" placeholder="Ex : Exemple@gmail.com"/>
+                        <p id="mailError"><span class="textFR">Le mail est incorrect</span>
+                            <span class="textEN NotLangue" >The email is incorrect</span></p>
+                    </div>
                 </div>
-
-                <p><label for="title">Le titre de votre mail :</label></p>
-                <div>
-                    <input type="text" name="title" id="title" maxlength="50" placeholder="Ex: Info sur la dernière mise à jour">
-                    <p id="TitreError">Ce champ est obligatoire</p>
+                <div id="ChampTitre">
+                    <p><label for="title"><span class="textFR">Le titre de votre mail :</span>
+                        <span class="textEN NotLangue" >The title of your email :</span></label></p>
+                    <div class="div-champ">
+                        <input type="text" name="title" id="title" maxlength="50" placeholder="Ex: Info sur la dernière mise à jour">
+                        <p id="TitreError"><span class="textFR">Ce champ est obligatoire</span>
+                            <span class="textEN NotLangue" >This field is required</span></p>
+                    </div>
                 </div>
-
-                <p><label for="corp">Le corp du mail <br> <span class="descrip">Pour rajouter des images mettez img="[le_lien_de_l'image]" et assurez vous que vous poussez les droits d'auteurs sur les images</span></label></p>
-                <div>
-                    <textarea name="corp" id="corp"></textarea>
-                    <p id="CorpError">Ce champ est obligatoire</p>
-                    <p id="ImageError">Veillez insérez des images correct</p>
+                <div id="ChampCorp">
+                    <p><label for="corp"><span class="textFR">Le corp du mail <br> <span class="descrip">Pour rajouter une image, donnez nous le lien de celle-ci  et assurez vous que vous poussez les droits d'auteurs sur l'image</span></span>
+                        <span class="textEN NotLangue" >The body of the mail <br> <span class="descrip">To add an image, give us the link of it and make sure you push the copyright on the image</span></span></label></p>
+                    <div class="div-champ">
+                        <textarea name="corp" id="corp"></textarea>
+                        <p id="CorpError"><span class="textFR">Ce champ est obligatoire</span>
+                            <span class="textEN NotLangue" >This field is required</span></p>
+                        <p id="ImageError"><span class="textFR">Veillez insérez des images correcte</span>
+                            <span class="textEN NotLangue" >Be sure to insert correct images</span></p>
+                    </div>
                 </div>
-
-                <button id="sendIt">Envoyer</button>
+                <div class="bouton">
+                    <a id="sendIt" class="btn btn-1"><span class="textFR">Envoyer</span>
+                        <span class="textEN NotLangue" >To send</span></a>
+                </div>
+                <p id="retour"><span class="textFR">Le message a bien été envoyer</span>
+                    <span class="textEN NotLangue" >The message has been sent</span>
             </div>
             <footer>
 
@@ -127,8 +143,6 @@
     <!-- /#page-content-wrapper -->
 
 </div>
-
-
 </body>
 
 </html>

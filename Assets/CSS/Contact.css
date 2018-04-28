@@ -25,3 +25,15 @@
 #mail,#title,#corp{
     width: 95%;
 }
+#retour{
+    display: none;
+}
+#content p{
+   margin-bottom: 0px;
+}
+.div-champ{
+    margin-bottom: 8px;
+}
+header{
+text-align: center;
+}

@@ -22,6 +22,8 @@ function affiche() {
         }
         $(".textFR").removeClass("NotLangue");
         $(".textEN").addClass("NotLangue");
+        $("#title").attr("placeholder","Ex: Info sur la dernière mise à jour");
+        $("#mail").attr("placeholder","Ex : Exemple@gmail.com");
     }else {
         if (etatmanu){
             $(".Accueil").attr("href", "/?lang=EN&List=on");
@@ -44,7 +46,10 @@ function affiche() {
         }
         $(".textEN").removeClass("NotLangue");
         $(".textFR").addClass("NotLangue");
+        $("#title").attr("placeholder","Ex: Information on the last update");
+        $("#mail").attr("placeholder","Ex : Example@gmail.com");
     }
+
 }
 
 

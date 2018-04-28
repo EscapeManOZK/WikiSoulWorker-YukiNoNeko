@@ -125,7 +125,7 @@ $lang = $_GET['lang'];
 $list = $_GET['List'];
 if ($_GET['img']=="true"){
 if ($lang=="FR"){
-$corp .="\n Ce message agis comme un contrat donc de ce fais si vous ne possédais pas les droit sur les images vous en serrez responsable";
+$corp .="\n \nCe message agis comme un contrat donc de ce fais si vous ne possédais pas les droit sur les images vous en serrez responsable";
 }else{
 $corp .="\n \nThis message acts as a contract so if you did not own the rights to the images you will be responsible";
 }
