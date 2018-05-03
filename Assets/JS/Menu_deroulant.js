@@ -10,7 +10,7 @@ function affiche() {
             $("#Erwin").attr("href","/Personnage/Erwin.html?lang=FR&List=on");
             $("#Lily").attr("href","/Personnage/Lily.html?lang=FR&List=on");
             $("#Stella").attr("href","/Personnage/Stella.html?lang=FR&List=on");
-            $("#Jin").attr("href","/Personnage/Stella.html?lang=FR&List=on");
+            $("#Jin").attr("href","/Personnage/Jin.html?lang=FR&List=on");
         }else {
             $(".Accueil").attr("href", "/?lang=FR&List=off");
             $("#Combats").attr("href", "/Combats/?lang=FR&List=off");
@@ -20,7 +20,7 @@ function affiche() {
             $("#Erwin").attr("href","/Personnage/Erwin.html?lang=FR&List=off");
             $("#Lily").attr("href","/Personnage/Lily.html?lang=FR&List=off");
             $("#Stella").attr("href","/Personnage/Stella.html?lang=FR&List=off");
-            $("#Jin").attr("href","/Personnage/Stella.html?lang=FR&List=off");
+            $("#Jin").attr("href","/Personnage/Jin.html?lang=FR&List=off");
         }
         $(".textFR").removeClass("NotLangue");
         $(".textEN").addClass("NotLangue");
@@ -36,7 +36,7 @@ function affiche() {
             $("#Erwin").attr("href","/Personnage/Erwin.html?lang=EN&List=on");
             $("#Lily").attr("href","/Personnage/Lily.html?lang=EN&List=on");
             $("#Stella").attr("href","/Personnage/Stella.html?lang=EN&List=on");
-            $("#Jin").attr("href","/Personnage/Stella.html?lang=EN&List=on");
+            $("#Jin").attr("href","/Personnage/Jin.html?lang=EN&List=on");
         }else {
             $(".Accueil").attr("href", "/?lang=EN&List=off");
             $("#Combats").attr("href", "/Combats/?lang=EN&List=off");
@@ -46,7 +46,7 @@ function affiche() {
             $("#Erwin").attr("href","/Personnage/Erwin.html?lang=EN&List=off");
             $("#Lily").attr("href","/Personnage/Lily.html?lang=EN&List=off");
             $("#Stella").attr("href","/Personnage/Stella.html?lang=EN&List=off");
-            $("#Jin").attr("href","/Personnage/Stella.html?lang=EN&List=off");
+            $("#Jin").attr("href","/Personnage/Jin.html?lang=EN&List=off");
         }
         $(".textEN").removeClass("NotLangue");
         $(".textFR").addClass("NotLangue");
