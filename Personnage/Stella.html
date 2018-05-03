@@ -52,6 +52,9 @@
                         <li>
                             <a  id="Stella" href="Personnage/Stella.html">Stella Unibell</a>
                         </li>
+                        <li>
+                            <a  id="Jin" href="Personnage/Jin.html">Jin Seipatsu</a>
+                        </li>
                     </ul>
                 </div>
             </li>
