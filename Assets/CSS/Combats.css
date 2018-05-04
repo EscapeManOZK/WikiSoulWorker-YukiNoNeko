@@ -1,3 +1,29 @@
 #sidebar-wrapper {
     background: url("../images/fondBarreNoir.jpg") repeat-y fixed;
 }
+
+.container-fluid h1, .container-fluid h5{
+    text-align: center;
+}
+#content h5{
+    background: #333;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 0px;
+}
+#normaux,#elite,#boss{
+    border: 1px solid black;
+
+}
+#descrip-normaux,#descrip-elite,#descrip-boss{
+    background: rgba(51, 51, 51,0.15);
+}
+
+@media(max-width:767px) {
+    #descrip-normaux,#descrip-elite,#descrip-boss{
+        display: none;
+    }
+    #content h5{
+        border-radius: 7px;
+    }
+}
