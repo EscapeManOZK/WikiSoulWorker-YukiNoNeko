@@ -5,12 +5,13 @@ var list;
 var mobile=false;
 
 $(document).ready(function() {
-    if (window.innerWidth<900){
+    if (window.innerWidth<768){
         mobile=true;
         $("#wrapper").removeClass("toggled");
         $("#wrapper").append("<div id=\"headerToggle\">" +
             "<a onclick='changeMenu();' href='#headerToggle' class=\"toggle\"></a>" +
             "</div>");
+
     }
     lang = $_GET("lang");
     list = $_GET("List");
