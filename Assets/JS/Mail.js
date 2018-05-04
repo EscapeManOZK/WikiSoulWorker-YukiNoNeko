@@ -1,5 +1,16 @@
 $(document).ready(function() {
-    $("#sendIt").on("click", mail);
+    $("#sendIt").on("click", mail).onk;
+    $.each($('textarea'), function() {
+        var offset = this.offsetHeight - this.clientHeight;
+
+        var resizeTextarea = function (e) {
+            $(e).css('height', 'auto').css('height', e.scrollHeight + offset);
+        };
+        $(this).on('keyup input', function () {
+            resizeTextarea(this);
+        });
+        resizeTextarea(this);
+    });
     var retour = $_GET("return");
     if (retour!=null) if (retour=="1")$("#retour").slideDown(300).delay(3000).slideUp(1000);
 });
