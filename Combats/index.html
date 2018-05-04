@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Rowczarek">
+    <link rel="icon" type="image/png" href="../Assets/images/logo.png" />
+
+    <title>Soulworker Wiki - Combats</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
+    <link href="../Assets/CSS/Langue.css" rel="stylesheet">
+    <link href="../Assets/CSS/Combats.css" rel="stylesheet">
+    <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Main.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" >
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="Accueil" href="/"><img src="../Assets/images/LogoSL.png" id="LogoSL"></a>
+            </li>
+            <li>
+                <a class="Accueil" href="/">Accueil</a>
+            </li>
+            <li id = "Perso">
+                <a href="#">Personnages</a>
+                <div id="AllPerso">
+                    <ul>
+                        <li >
+                            <a id="Haru" href="Personnage/Haru.html">Haru Estia</a>
+                        </li>
+                        <li>
+                            <a id="Erwin" href="Personnage/Erwin.html">Erwin Archlight</a>
+                        </li>
+                        <li>
+                            <a id="Lily" href="Personnage/Lily.html">Lily Bloomerchen</a>
+                        </li>
+                        <li>
+                            <a  id="Stella" href="Personnage/Stella.html">Stella Unibell</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a id="Combats" href="">Combats</a>
+            </li>
+            <li>
+                <a id="Objets" href="">Objets</a>
+            </li>
+            <li>
+                <a id="Contact" href="">Contact</a>
+            </li>
+            <li id="form">
+                <form >
+                    <div class="select-wrapper">
+                        <select id="Langue" style>
+                            <option value="FR" id="FR" >FR</option>
+                            <option value="EN" id="EN" >EN</option>
+                        </select>
+                    </div>
+                </form>
+            </li>
+        </ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <!--
+            <span class="textFR"></span>
+            <span class="textEN NotLangue" ></span>
+            -->
+            <header>
+                <h1>Combats</h1>
+                <h4>Cette page est dédié à la partie Combat du jeu</h4>
+            </header>
+            <div id="content">
+                <article id="head">
+                    <p>Les combats consistent à éliminer une horde d’adversaire réparti dans la salle pour passer à la salle suivante, et ce jusqu’à atteindre la salle du boss. Ce dernier sera en fonction de la mission accompagné d’adversaires classique.</p>
+                    <p>Il existe 3 grosses catégories de monstre et elles mêmes se divisant en plusieurs sous parties:</p>
+                </article>
+                <article id="normaux">
+                    <h5>Les monstres normaux</h5>
+                    <div id="descrip-normaux">
+                        <p>Ils ne possèdent pas de super armure. Ils ne réduisent donc pas les dégats reçu et sont repoussé par tout type de dégâts.</p>
+                    </div>
+                </article>
+                <article id="elite">
+                    <h5>Les monstres élites</h5>
+                    <div id="descrip-elite">
+                        <p>Ils possèdent plusieurs barre de vie et de la super armure. Ils ne craignent donc aucun contrôle tant que leur armure (barre jaune) est active. Cette dernière réduit aussi considérablement les dégats qu’ils reçoivent. Il faut donc la casser avec des sorts et/ou des attaques de base. Une fois cassé l’ennemi prendra beaucoups plus de dégâts pendant un court temps et sera repoussé par vos attaques de base.</p>
+                        <p>Attention: Même si leur armure est cassé ces ennemis ne craignent pas le contrôle que vous pouvez leur affliger avec des sorts, mais uniquement celui des attaques de base.</p>
+                    </div>
+                </article>
+                <article id="boss">
+                    <h5>Les boss</h5>
+                    <div id="descrip-boss">
+                        <p>Ils sont une version amélioré des monstres elites. Ils ont beaucoups plus de vie et d’armure que ces derniers mais surtout ont des sorts que vous devrez esquiver à tout pris. Certaines attaques de certains boss peuvent même vous tuer en un coups !</p>
+                    </div>
+                </article>
+                <article id="astuce">
+                    <p>Vos dégâts de vos sorts et attaque de base ne sont jamais fixe. Vos dégâts varient en fonction de votre attaque et des dégâts du sort. Un même sort lancé deux fois d’affilé ne fera pas les mêmes dégâts. Il en est de même pour les critique, les dégâts des critiques dépendent des dégâts qu’inflige votre attaque.</p>
+                    <p>Vous disposez de combos utilisant le clique droit et clique gauche (avec l’assignement des touches de base). Pour chaque niveau d’amélioration de votre passif d’attaque de base vous gagnez un combo. Ce dernier est visible en laissant votre souris sur l'icône du passif dans votre arbre de compétence.</p>
+                    <p>Chaque coups de vos combos n’infligent pas les mêmes dégâts indépendamment de la variation de dégâts <a href="#">voir ci dessus</a>.</p>
+                </article>
+            </div>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+
+
+
+</body>
+
+</html>
