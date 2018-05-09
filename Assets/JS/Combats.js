@@ -1,6 +1,7 @@
 var normal=false;
 var elit=false;
 var bos=false;
+var Etoile=false
 function normaux() {
     $("#descrip-normaux").slideToggle("slow");
     if (normal){
@@ -39,6 +40,19 @@ function boss() {
     }
 }
 
+function etoile() {
+    $("#descrip-Exp").slideToggle("slow");
+    if (Etoile){
+        $("#EXPETOILE h5").removeClass("open");
+        $("#EXPETOILE h5").addClass("closed");
+        Etoile=false;
+    } else {
+        $("#EXPETOILE h5").removeClass("closed");
+        $("#EXPETOILE h5").addClass("open");
+        Etoile=true;
+    }
+}
+
 $(document).ready(function() {
     if (window.innerWidth<768){
         $("#content h5").addClass("closed");
@@ -46,6 +60,7 @@ $(document).ready(function() {
         $("#normaux").on("click",normaux);
         $("#elite").on("click",elite);
         $("#boss").on("click",boss);
+        $("#EXPETOILE").on("click",etoile);
     }else {
         $("#content h5").addClass("open");
     }

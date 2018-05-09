@@ -1,10 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Rowczarek">
+    <link rel="icon" type="image/png" href="../Assets/images/logo.png" />
+
+    <title>Soulworker Wiki - Combats</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
+    <link href="../Assets/CSS/Langue.css" rel="stylesheet">
+    <link href="../Assets/CSS/Combats.css" rel="stylesheet">
+    <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Main.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Combats.js"></script>
 </head>
+
 <body>
 
+<div id="wrapper" class="toggled">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" >
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="Accueil" href="/"><img src="../Assets/images/LogoSL.png" id="LogoSL"></a>
+            </li>
+            <li>
+                <a class="Accueil" href="/">
+                    <span class="textFR">Accueil</span>
+                    <span class="textEN NotLangue" >Home</span>
+                </a>
+            </li>
+            <li id = "Perso">
+                <a href="#AllPerso">
+                    <span class="textFR">Personnages</span>
+                    <span class="textEN NotLangue" >Characters</span>
+                </a>
+                <div id="AllPerso">
+                    <ul>
+                        <li >
+                            <a id="Haru" href="Personnage/Haru.html">Haru Estia</a>
+                        </li>
+                        <li>
+                            <a id="Erwin" href="Personnage/Erwin.html">Erwin Archlight</a>
+                        </li>
+                        <li>
+                            <a id="Lily" href="Personnage/Lily.html">Lily Bloomerchen</a>
+                        </li>
+                        <li>
+                            <a  id="Stella" href="Personnage/Stella.html">Stella Unibell</a>
+                        </li>
+                        <li>
+                            <a  id="Jin" href="Personnage/Jin.html">Jin Seipatsu</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="Combat">
+                <a href="#AllCombat">
+                    <span class="textFR">Combats</span>
+                    <span class="textEN NotLangue" >Fights</span>
+                </a>
+                <div id="AllCombat">
+                    <ul>
+                        <li>
+                            <a id="Combats" href="">
+                                <span class="textFR">Combats</span>
+                                <span class="textEN NotLangue" >Fights</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Exp" href="">
+                                <span class="textFR">Expérience</span>
+                                <span class="textEN NotLangue" >Expertise</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a id="Objets" href="">
+                    <span class="textFR">Objets</span>
+                    <span class="textEN NotLangue" >Objects</span>
+                </a>
+            </li>
+            <li>
+                <a id="Contact" href=""><span class="textFR">Contact</span>
+                    <span class="textEN NotLangue" >Contact us</span></a>
+            </li>
+            <li id="form">
+                <form >
+                    <div class="select-wrapper">
+                        <select id="Langue" style>
+                            <option value="FR" id="FR" >FR</option>
+                            <option value="EN" id="EN" >EN</option>
+                        </select>
+                    </div>
+                </form>
+            </li>
+        </ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <!--
+            <span class="textFR"></span>
+            <span class="textEN NotLangue" ></span>
+            -->
+            <header>
+                <h1>
+                    <span class="textFR">L'expérience</span>
+                    <span class="textEN NotLangue" >Expertise</span>
+                </h1>
+            </header>
+            <div id="content">
+                <article id="head">
+                    <p>
+                        <span class="textFR">Dans Soulworker il existe plusieurs type d'expérience. Voici une liste:</span>
+                        <span class="textEN NotLangue" >Page being translated</span>
+                    </p>
+                </article>
+                <article id="normaux">
+                    <h5>
+                        <span class="textFR">EXP</span>
+                        <span class="textEN NotLangue" >EXP</span>
+                    </h5>
+                    <div id="descrip-normaux">
+                        <p class="last">
+                            <span class="textFR">C’est l’expérience de base, elle est obtenable en tuant des ennemis ou en terminant une quête et vous servira à monter de niveau et ce jusqu’au level 55 inclus. A partir de ce niveau vous de gagner plus d’EXP mais de l’EXP*.</span>
+                            <span class="textEN NotLangue" ></span>
+                        </p>
+                    </div>
+                </article>
+                <article id="elite">
+                    <h5>
+                        <span class="textFR">EXPG</span>
+                        <span class="textEN NotLangue" >EXPG</span>
+                    </h5>
+                    <div id="descrip-elite">
+                        <p class="last">
+                            <span class="textFR">Cette expérience correspond à l’expérience de guilde. Elle permet de monter le niveau général de la guilde. (à finir)</span>
+                            <span class="textEN NotLangue" ></span>
+                        </p>
+                    </div>
+                </article>
+                <article id="boss">
+                    <h5>
+                        <span class="textFR">EXPA</span>
+                        <span class="textEN NotLangue" >EXPA</span>
+                    </h5>
+                    <div id="descrip-boss">
+                        <p class="last">
+                            <span class="textFR">L'expérience Akasha correspond tout simplement à l’expérience qu’une carte akasha possède. Elle est déterminé en % et permet une fois à 100% d’améliorer une carte. Pour monter l'expérience d’une carte il faut posséder la carte dans votre inventaire et aller voir Siho. Vous pouvez déposer la carte souhaité et sacrifier des cartes qui ne vous intéressent pas pour monter l'expérience de la carte sélectionné.</span>
+                            <span class="textEN NotLangue" ></span>
+                        </p>
+                    </div>
+                </article>
+                <article id="EXPETOILE">
+                    <h5>
+                        <span class="textFR">EXP*</span>
+                        <span class="textEN NotLangue" >EXP*</span>
+                    </h5>
+                    <div id="descrip-Exp">
+                        <p class="last">
+                            <span class="textFR">Une fois level 55 l’expérience gagné se transforme en EXP*. Elle sert à monter votre rang sur votre profil en jeu. Plus votre rang est haut, plus vos autres personnages profite d’un bonus d’EXP.</span>
+                            <span class="textEN NotLangue" ></span>
+                        </p>
+                    </div>
+                </article>
+                <article id="astuce">
+                    <p>
+                        <span class="textFR">Nous vous conseillons afin de monter de niveau plus rapidement de jouer la mission dément episode 4 la plus haute qui vous est accessible. Evitez de faire des zone qui sont trop bas niveau par rapport à vous. Les épisodes dément possédant un bonus d’expérience (affiché lors de la sélection des missions) sont aussi intéressante pour gagner de l'expérience si votre niveau n’est pas trop éloigné de cette dernière.</span>
+                        <span class="textEN NotLangue" ></span>
+                    </p>
+                    <p>
+                        <span class="textFR">Nous vous conseillons aussi de jouer à plusieurs afin de bénéficier d’une bonus d’expérience et de loot de groupe. N’hésitez pas à utiliser le canal de recherche de groupe en appuyant sur “N”.</span>
+                        <span class="textEN NotLangue" ></span>
+                    </p>
+                </article>
+            </div>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+
+
+
 </body>
+
 </html>
