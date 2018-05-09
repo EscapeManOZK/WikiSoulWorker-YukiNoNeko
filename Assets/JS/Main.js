@@ -1,7 +1,8 @@
 var etatmanu=false;
-
+var etatmenuC=false;
 var lang;
 var list;
+var listC;
 var mobile=false;
 
 $(document).ready(function() {
@@ -15,6 +16,7 @@ $(document).ready(function() {
     }
     lang = $_GET("lang");
     list = $_GET("List");
+    listC = $_GET("ListC");
     if (lang != null) {
         if (lang == "FR") {
             $("#FR").attr("selected","selected");
@@ -28,6 +30,12 @@ $(document).ready(function() {
         etatmanu = false;
         $("#AllPerso").css("display","none");
     }
+    if (listC == "on") {
+        etatmenuC = true;
+    } else {
+        etatmenuC = false;
+        $("#AllCombat").css("display","none");
+    }
     affiche();
     $("#Langue").on("change",function() {
         affiche();
@@ -39,6 +47,11 @@ $(document).ready(function() {
     $("#Perso > a").on("click",  function() {
         $("#AllPerso").toggle("slow");
         if(etatmanu)etatmanu=false;else etatmanu=true;
+        affiche();
+    });
+    $("#Combat > a").on("click",  function() {
+        $("#AllCombat").toggle("slow");
+        if(etatmenuC)etatmenuC=false;else etatmenuC=true;
         affiche();
     });
 

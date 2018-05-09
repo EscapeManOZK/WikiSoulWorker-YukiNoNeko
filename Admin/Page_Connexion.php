@@ -64,12 +64,28 @@
                     </ul>
                 </div>
             </li>
-            <li>
-                <a id="Combats" href="">
-                    <span class="textFR">Combats</span>
-                    <span class="textEN NotLangue" >Fights</span>
-                </a>
-            </li>
+            <li id="Combat">
+                            <a href="#AllCombat">
+                                <span class="textFR">Combats</span>
+                                <span class="textEN NotLangue" >Fights</span>
+                            </a>
+                            <div id="AllCombat">
+                                <ul>
+                                    <li>
+                                        <a id="Combats" href="">
+                                            <span class="textFR">Combats</span>
+                                            <span class="textEN NotLangue" >Fights</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="Exp" href="">
+                                            <span class="textFR">Expérience</span>
+                                            <span class="textEN NotLangue" >Expertise</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
             <li>
                 <a id="Objets" href="">
                     <span class="textFR">Objets</span>

@@ -42,57 +42,86 @@
 
     <!-- Sidebar -->
     <div id="sidebar-wrapper" >
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a class="Accueil" href="/"><img src="../Assets/images/LogoSL.png" id="LogoSL"></a>
-            </li>
-            <li>
-                <a class="Accueil" href="/">Accueil</a>
-            </li>
-            <li id = "Perso">
-                <a href="#">Personnages</a>
-                <div id="AllPerso">
-                    <ul>
-                        <li >
-                            <a id="Haru" href="Personnage/Haru.html">Haru Estia</a>
-                        </li>
-                        <li>
-                            <a id="Erwin" href="Personnage/Erwin.html">Erwin Archlight</a>
-                        </li>
-                        <li>
-                            <a id="Lily" href="Personnage/Lily.html">Lily Bloomerchen</a>
-                        </li>
-                        <li>
-                            <a  id="Stella" href="Personnage/Stella.html">Stella Unibell</a>
-                        </li>
-                        <li>
-                            <a  id="Jin" href="Personnage/Jin.html">Jin Seipatsu</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a id="Combats" href="">Combats</a>
-            </li>
-            <li>
-                <a id="Objets" href="">Objets</a>
-            </li>
-            <li>
-                <a id="Contact" href="">Contact</a>
-            </li>
-            <li id="form">
-                <form >
-                    <div class="select-wrapper">
-                        <select id="Langue" style>
-                            <option value="FR" id="FR" >FR</option>
-                            <option value="EN" id="EN" >EN</option>
-                        </select>
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a class="Accueil" href="/"><img src="../Assets/images/LogoSL.png" id="LogoSL"></a>
+                </li>
+                <li>
+                    <a class="Accueil" href="/">
+                        <span class="textFR">Accueil</span>
+                        <span class="textEN NotLangue" >Home</span>
+                    </a>
+                </li>
+                <li id = "Perso">
+                    <a href="#">
+                        <span class="textFR">Personnages</span>
+                        <span class="textEN NotLangue" >Characters</span>
+                    </a>
+                    <div id="AllPerso">
+                        <ul>
+                            <li >
+                                <a id="Haru" href="Personnage/Haru.html">Haru Estia</a>
+                            </li>
+                            <li>
+                                <a id="Erwin" href="Personnage/Erwin.html">Erwin Archlight</a>
+                            </li>
+                            <li>
+                                <a id="Lily" href="Personnage/Lily.html">Lily Bloomerchen</a>
+                            </li>
+                            <li>
+                                <a  id="Stella" href="Personnage/Stella.html">Stella Unibell</a>
+                            </li>
+                            <li>
+                                <a  id="Jin" href="Personnage/Jin.html">Jin Seipatsu</a>
+                            </li>
+                        </ul>
                     </div>
-                </form>
-            </li>
-        </ul>
+                </li>
+                <li id="Combat">
+                    <a href="#AllCombat">
+                        <span class="textFR">Combats</span>
+                        <span class="textEN NotLangue" >Fights</span>
+                    </a>
+                    <div id="AllCombat">
+                        <ul>
+                            <li>
+                                <a id="Combats" href="">
+                                    <span class="textFR">Combats</span>
+                                    <span class="textEN NotLangue" >Fights</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="Exp" href="">
+                                    <span class="textFR">Expérience</span>
+                                    <span class="textEN NotLangue" >Expertise</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a id="Objets" href="">
+                        <span class="textFR">Objets</span>
+                        <span class="textEN NotLangue" >Objects</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="Contact" href=""><span class="textFR">Contact</span>
+                        <span class="textEN NotLangue" >Contact us</span></a>
+                </li>
+                <li id="form">
+                    <form >
+                        <div class="select-wrapper">
+                            <select id="Langue" style>
+                                <option value="FR" id="FR" >FR</option>
+                                <option value="EN" id="EN" >EN</option>
+                            </select>
+                        </div>
+                    </form>
+                </li>
+            </ul>
 
-    </div>
+        </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
