@@ -27,6 +27,12 @@
 #AllPerso ul li{
     font-size: 13px;
 }
+#AllCombat ul li{
+    font-size: 13px;
+}
+#AllObjets ul li{
+    font-size: 13px;
+}
 
 #headerToggle {
     -moz-backface-visibility: hidden;

@@ -26,10 +26,18 @@ function affiche() {
     }else {
         string+="ListC=off";
     }
+    string+="&";
+    if (etatmenuO){
+        string+="ListO=on";
+    }else {
+        string+="ListO=off";
+    }
     $(".Accueil").attr("href", "/?"+string);
     $("#Combats").attr("href", "/Combats/?"+string);
     $("#Contact").attr("href", "/Contact/?"+string);
-    $("#Objets").attr("href", "/Objets/?"+string);
+    $("#Akasha").attr("href", "/Objets/Akasha.html?"+string);
+    $("#Plan").attr("href", "/Objets/Plan.html?"+string);
+    $("#Ressource").attr("href", "/Objets/Ressources.html?"+string);
     $("#Exp").attr("href","/Combats/Experience.html?"+string);
     $("#Haru").attr("href", "/Personnage/Haru.html?"+string);
     $("#Erwin").attr("href","/Personnage/Erwin.html?"+string);

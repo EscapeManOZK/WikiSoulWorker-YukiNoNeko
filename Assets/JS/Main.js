@@ -1,8 +1,10 @@
 var etatmanu=false;
 var etatmenuC=false;
+var etatmenuO=false;
 var lang;
 var list;
 var listC;
+var listO;
 var mobile=false;
 
 $(document).ready(function() {
@@ -17,6 +19,7 @@ $(document).ready(function() {
     lang = $_GET("lang");
     list = $_GET("List");
     listC = $_GET("ListC");
+    listO = $_GET("ListO");
     if (lang != null) {
         if (lang == "FR") {
             $("#FR").attr("selected","selected");
@@ -36,6 +39,12 @@ $(document).ready(function() {
         etatmenuC = false;
         $("#AllCombat").css("display","none");
     }
+    if (listC == "on") {
+        etatmenuC = true;
+    } else {
+        etatmenuC = false;
+        $("#AllObjets").css("display","none");
+    }
     affiche();
     $("#Langue").on("change",function() {
         affiche();
@@ -52,6 +61,11 @@ $(document).ready(function() {
     $("#Combat > a").on("click",  function() {
         $("#AllCombat").toggle("slow");
         if(etatmenuC)etatmenuC=false;else etatmenuC=true;
+        affiche();
+    });
+    $("#Objet > a").on("click",  function() {
+        $("#AllObjets").toggle("slow");
+        if(etatmenuO)etatmenuO=false;else etatmenuO=true;
         affiche();
     });
 
