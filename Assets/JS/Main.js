@@ -39,10 +39,10 @@ $(document).ready(function() {
         etatmenuC = false;
         $("#AllCombat").css("display","none");
     }
-    if (listC == "on") {
-        etatmenuC = true;
+    if (listO == "on") {
+        etatmenuO = true;
     } else {
-        etatmenuC = false;
+        etatmenuO = false;
         $("#AllObjets").css("display","none");
     }
     affiche();
