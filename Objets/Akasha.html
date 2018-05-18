@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -16,11 +16,18 @@
 
     <!-- Custom styles for this template -->
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
-    <link href="../Assets/CSS/Langue.css" rel="stylesheet">
+    <link href="../Assets/CSS/Outils.css" rel="stylesheet">
     <link href="../Assets/CSS/Objets.css" rel="stylesheet">
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Gestion_Lien.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1207453198189863",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
 
 <body>
@@ -43,6 +50,8 @@
                 <a href="#">
                     <span class="textFR">Personnages</span>
                     <span class="textEN NotLangue" >Characters</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FpersoNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FpersoBlanc"/>
                 </a>
                 <div id="AllPerso">
                     <ul>
@@ -66,8 +75,10 @@
             </li>
             <li id="Combat">
                 <a href="#AllCombat">
-                    <span class="textFR">Combats</span>
-                    <span class="textEN NotLangue" >Fights</span>
+                    <span class="textFR">Jeu</span>
+                    <span class="textEN NotLangue" >Game</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FJeuNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FJeuBlanc"/>
                 </a>
                 <div id="AllCombat">
                     <ul>
@@ -90,6 +101,8 @@
                 <a href="#AllObjets">
                     <span class="textFR">Objets</span>
                     <span class="textEN NotLangue" >Objects</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FObjetNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FObjetBlanc"/>
                 </a>
                 <div id="AllObjets">
                     <ul>
@@ -134,7 +147,7 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <div id="page-content-wrapper" id="top">
         <div class="container-fluid">
             <!--
             <span class="textFR"></span>
@@ -157,6 +170,9 @@
     </div>
     <!-- /#page-content-wrapper -->
 
+</div>
+<div id="slideToggle">
+    <a href='#top' class="toggle"></a>
 </div>
 </body>
 

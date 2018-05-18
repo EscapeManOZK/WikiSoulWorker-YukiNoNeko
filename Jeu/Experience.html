@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -9,19 +9,27 @@
     <meta name="author" content="Rowczarek">
     <link rel="icon" type="image/png" href="../Assets/images/logo.png" />
 
-    <title>Soulworker Wiki - Combats</title>
+    <title>Soulworker Wiki - Expérience</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
-    <link href="../Assets/CSS/Langue.css" rel="stylesheet">
+    <link href="../Assets/CSS/Outils.css" rel="stylesheet">
     <link href="../Assets/CSS/Combats.css" rel="stylesheet">
+    <link href="../Assets/CSS/MenuDeroulantInterne.css" rel="stylesheet">
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Gestion_Lien.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
-    <script type="text/javascript" src="../Assets/JS/Combats.js"></script>
+    <script type="text/javascript" src="../Assets/JS/MenuDeroulantInterne.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1207453198189863",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
 
 <body>
@@ -41,9 +49,11 @@
                 </a>
             </li>
             <li id = "Perso">
-                <a href="#AllPerso">
+                <a href="#">
                     <span class="textFR">Personnages</span>
                     <span class="textEN NotLangue" >Characters</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FpersoNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FpersoBlanc"/>
                 </a>
                 <div id="AllPerso">
                     <ul>
@@ -67,8 +77,10 @@
             </li>
             <li id="Combat">
                 <a href="#AllCombat">
-                    <span class="textFR">Combats</span>
-                    <span class="textEN NotLangue" >Fights</span>
+                    <span class="textFR">Jeu</span>
+                    <span class="textEN NotLangue" >Game</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FJeuNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FJeuBlanc"/>
                 </a>
                 <div id="AllCombat">
                     <ul>
@@ -91,6 +103,8 @@
                 <a href="#AllObjets">
                     <span class="textFR">Objets</span>
                     <span class="textEN NotLangue" >Objects</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FObjetNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FObjetBlanc"/>
                 </a>
                 <div id="AllObjets">
                     <ul>
@@ -135,7 +149,7 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <div id="page-content-wrapper" id="top">
         <div class="container-fluid">
             <!--
             <span class="textFR"></span>
@@ -143,72 +157,76 @@
             -->
             <header>
                 <h1>
-                    <span class="textFR">Les Combats</span>
-                    <span class="textEN NotLangue" >Fights</span>
+                    <span class="textFR">L'expérience</span>
+                    <span class="textEN NotLangue" >Expertise</span>
                 </h1>
             </header>
             <div id="content">
                 <article id="head">
                     <p>
-                        <span class="textFR">Les combats consistent à éliminer une horde d’adversaire réparti dans la salle pour passer à la salle suivante, et ce jusqu’à atteindre la salle du boss. Ce dernier sera en fonction de la mission accompagné d’adversaires classique.</span>
+                        <span class="textFR">Dans Soulworker il existe plusieurs type d'expérience. Voici une liste:</span>
                         <span class="textEN NotLangue" >Page being translated</span>
                     </p>
-                    <p>
-                        <span class="textFR">Il existe 3 grosses catégories de monstre et elles mêmes se divisant en plusieurs sous parties:</span>
-                        <span class="textEN NotLangue" ></span>
-                    </p>
                 </article>
-                <article id="normaux">
+                <article id="menu1" class="menu">
                     <h5>
-                        <span class="textFR">Les monstres normaux</span>
-                        <span class="textEN NotLangue" ></span>
+                        <span class="textFR">EXP</span>
+                        <span class="textEN NotLangue" >EXP</span>
+                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageListe" id="F1"/>
                     </h5>
-                    <div id="descrip-normaux">
+                    <div id="descrip1" class="descrip">
                         <p class="last">
-                            <span class="textFR">Ils ne possèdent pas de super armure. Ils ne réduisent donc pas les dégats reçu et sont repoussé par tout type de dégâts.</span>
+                            <span class="textFR">C’est l’expérience de base, elle est obtenable en tuant des ennemis ou en terminant une quête et vous servira à monter de niveau et ce jusqu’au level 55 inclus. A partir de ce niveau vous de gagner plus d’EXP mais de l’EXP*.</span>
                             <span class="textEN NotLangue" ></span>
                         </p>
                     </div>
                 </article>
-                <article id="elite">
+                <article id="menu2" class="menu">
                     <h5>
-                        <span class="textFR">Les monstres élites</span>
-                        <span class="textEN NotLangue" ></span>
+                        <span class="textFR">EXPG</span>
+                        <span class="textEN NotLangue" >EXPG</span>
+                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageListe" id="F2"/>
                     </h5>
-                    <div id="descrip-elite">
-                        <p>
-                            <span class="textFR">Ils possèdent plusieurs barre de vie et de la super armure. Ils ne craignent donc aucun contrôle tant que leur armure (barre jaune) est active. Cette dernière réduit aussi considérablement les dégats qu’ils reçoivent. Il faut donc la casser avec des sorts et/ou des attaques de base. Une fois cassé l’ennemi prendra beaucoups plus de dégâts pendant un court temps et sera repoussé par vos attaques de base.</span>
-                            <span class="textEN NotLangue" ></span>
-                        </p>
+                    <div id="descrip2" class="descrip">
                         <p class="last">
-                            <span class="textFR">Attention: Même si leur armure est cassé ces ennemis ne craignent pas le contrôle que vous pouvez leur affliger avec des sorts, mais uniquement celui des attaques de base.</span>
+                            <span class="textFR">Cette expérience correspond à l’expérience de guilde. Elle permet de monter le niveau général de la guilde. (à finir)</span>
                             <span class="textEN NotLangue" ></span>
                         </p>
                     </div>
                 </article>
-                <article id="boss">
+                <article id="menu3" class="menu">
                     <h5>
-                        <span class="textFR">Les boss</span>
-                        <span class="textEN NotLangue" ></span>
+                        <span class="textFR">EXPA</span>
+                        <span class="textEN NotLangue" >EXPA</span>
+                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageListe" id="F3"/>
                     </h5>
-                    <div id="descrip-boss">
+                    <div id="descrip3" class="descrip">
                         <p class="last">
-                            <span class="textFR">Ils sont une version amélioré des monstres elites. Ils ont beaucoups plus de vie et d’armure que ces derniers mais surtout ont des sorts que vous devrez esquiver à tout pris. Certaines attaques de certains boss peuvent même vous tuer en un coups !</span>
+                            <span class="textFR">L'expérience Akasha correspond tout simplement à l’expérience qu’une carte akasha possède. Elle est déterminé en % et permet une fois à 100% d’améliorer une carte. Pour monter l'expérience d’une carte il faut posséder la carte dans votre inventaire et aller voir Siho. Vous pouvez déposer la carte souhaité et sacrifier des cartes qui ne vous intéressent pas pour monter l'expérience de la carte sélectionné.</span>
+                            <span class="textEN NotLangue" ></span>
+                        </p>
+                    </div>
+                </article>
+                <article id="menu4" class="menu">
+                    <h5>
+                        <span class="textFR">EXP*</span>
+                        <span class="textEN NotLangue" >EXP*</span>
+                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageListe" id="F4"/>
+                    </h5>
+                    <div id="descrip4" class="descrip">
+                        <p class="last">
+                            <span class="textFR">Une fois level 55 l’expérience gagné se transforme en EXP*. Elle sert à monter votre rang sur votre profil en jeu. Plus votre rang est haut, plus vos autres personnages profite d’un bonus d’EXP.</span>
                             <span class="textEN NotLangue" ></span>
                         </p>
                     </div>
                 </article>
                 <article id="astuce">
                     <p>
-                        <span class="textFR">Vos dégâts de vos sorts et attaque de base ne sont jamais fixe. Vos dégâts varient en fonction de votre attaque et des dégâts du sort. Un même sort lancé deux fois d’affilé ne fera pas les mêmes dégâts. Il en est de même pour les critique, les dégâts des critiques dépendent des dégâts qu’inflige votre attaque.</span>
+                        <span class="textFR">Nous vous conseillons afin de monter de niveau plus rapidement de jouer la mission dément episode 4 la plus haute qui vous est accessible. Evitez de faire des zone qui sont trop bas niveau par rapport à vous. Les épisodes dément possédant un bonus d’expérience (affiché lors de la sélection des missions) sont aussi intéressante pour gagner de l'expérience si votre niveau n’est pas trop éloigné de cette dernière.</span>
                         <span class="textEN NotLangue" ></span>
                     </p>
                     <p>
-                        <span class="textFR">Vous disposez de combos utilisant le clique droit et clique gauche (avec l’assignement des touches de base). Pour chaque niveau d’amélioration de votre passif d’attaque de base vous gagnez un combo. Ce dernier est visible en laissant votre souris sur l'icône du passif dans votre arbre de compétence.</span>
-                        <span class="textEN NotLangue" ></span>
-                    </p>
-                    <p>
-                        <span class="textFR">Chaque coups de vos combos n’infligent pas les mêmes dégâts indépendamment de la variation de dégâts <a href="#">voir ci dessus</a>.</span>
+                        <span class="textFR">Nous vous conseillons aussi de jouer à plusieurs afin de bénéficier d’une bonus d’expérience et de loot de groupe. N’hésitez pas à utiliser le canal de recherche de groupe en appuyant sur “N”.</span>
                         <span class="textEN NotLangue" ></span>
                     </p>
                 </article>
@@ -221,9 +239,9 @@
     <!-- /#page-content-wrapper -->
 
 </div>
-
-
-
+<div id="slideToggle">
+    <a href='#top' class="toggle"></a>
+</div>
 </body>
 
 </html>

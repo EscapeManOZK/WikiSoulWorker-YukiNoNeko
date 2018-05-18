@@ -56,6 +56,8 @@
                     <a href="#">
                         <span class="textFR">Personnages</span>
                         <span class="textEN NotLangue" >Characters</span>
+                        <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FpersoNoir"/>
+                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FpersoBlanc"/>
                     </a>
                     <div id="AllPerso">
                         <ul>
@@ -79,8 +81,10 @@
                 </li>
                 <li id="Combat">
                     <a href="#AllCombat">
-                        <span class="textFR">Combats</span>
-                        <span class="textEN NotLangue" >Fights</span>
+                        <span class="textFR">Jeu</span>
+                        <span class="textEN NotLangue" >Game</span>
+                        <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FJeuNoir"/>
+                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FJeuBlanc"/>
                     </a>
                     <div id="AllCombat">
                         <ul>
@@ -99,34 +103,36 @@
                         </ul>
                     </div>
                 </li>
-               <li id="Objet">
-                               <a href="#AllObjets">
-                                   <span class="textFR">Objets</span>
-                                   <span class="textEN NotLangue" >Objects</span>
-                               </a>
-                               <div id="AllObjets">
-                                   <ul>
-                                       <li>
-                                           <a id="Akasha" href="">
-                                               <span class="textFR">Akasha</span>
-                                               <span class="textEN NotLangue" >Akasha</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a id="Plan" href="">
-                                               <span class="textFR">Plan</span>
-                                               <span class="textEN NotLangue" >Blueprint</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a id="Ressource" href="">
-                                               <span class="textFR">Ressources</span>
-                                               <span class="textEN NotLangue" >Resources</span>
-                                           </a>
-                                       </li>
-                                   </ul>
-                               </div>
-                           </li>
+                <li id="Objet">
+                    <a href="#AllObjets">
+                        <span class="textFR">Objets</span>
+                        <span class="textEN NotLangue" >Objects</span>
+                        <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FObjetNoir"/>
+                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FObjetBlanc"/>
+                    </a>
+                    <div id="AllObjets">
+                        <ul>
+                            <li>
+                                <a id="Akasha" href="">
+                                    <span class="textFR">Akasha</span>
+                                    <span class="textEN NotLangue" >Akasha</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="Plan" href="">
+                                    <span class="textFR">Plan</span>
+                                    <span class="textEN NotLangue" >Blueprint</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="Ressource" href="">
+                                    <span class="textFR">Ressources</span>
+                                    <span class="textEN NotLangue" >Resources</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 <li>
                     <a id="Contact" href=""><span class="textFR">Contact</span>
                         <span class="textEN NotLangue" >Contact us</span></a>
@@ -142,7 +148,7 @@
                     </form>
                 </li>
             </ul>
-
+    
         </div>
     <!-- /#sidebar-wrapper -->
 

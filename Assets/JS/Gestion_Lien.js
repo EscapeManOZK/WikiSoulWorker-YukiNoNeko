@@ -33,12 +33,14 @@ function affiche() {
         string+="ListO=off";
     }
     $(".Accueil").attr("href", "/?"+string);
-    $("#Combats").attr("href", "/Combats/?"+string);
+    $("#Combats").attr("href", "/Jeu/?"+string);
     $("#Contact").attr("href", "/Contact/?"+string);
+    $(".Contact").attr("href", "/Contact/?"+string);
     $("#Akasha").attr("href", "/Objets/Akasha.html?"+string);
     $("#Plan").attr("href", "/Objets/Plan.html?"+string);
     $("#Ressource").attr("href", "/Objets/Ressources.html?"+string);
-    $("#Exp").attr("href","/Combats/Experience.html?"+string);
+    $(".Ressource").attr("href", "/Objets/Ressources.html?"+string);
+    $("#Exp").attr("href","/Jeu/Experience.html?"+string);
     $("#Haru").attr("href", "/Personnage/Haru.html?"+string);
     $("#Erwin").attr("href","/Personnage/Erwin.html?"+string);
     $("#Lily").attr("href","/Personnage/Lily.html?"+string);

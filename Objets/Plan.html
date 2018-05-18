@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -16,11 +16,18 @@
 
     <!-- Custom styles for this template -->
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
-    <link href="../Assets/CSS/Langue.css" rel="stylesheet">
+    <link href="../Assets/CSS/Outils.css" rel="stylesheet">
     <link href="../Assets/CSS/Objets.css" rel="stylesheet">
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Gestion_Lien.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1207453198189863",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
 
 <body>
@@ -43,6 +50,8 @@
                 <a href="#">
                     <span class="textFR">Personnages</span>
                     <span class="textEN NotLangue" >Characters</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FpersoNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FpersoBlanc"/>
                 </a>
                 <div id="AllPerso">
                     <ul>
@@ -66,8 +75,10 @@
             </li>
             <li id="Combat">
                 <a href="#AllCombat">
-                    <span class="textFR">Combats</span>
-                    <span class="textEN NotLangue" >Fights</span>
+                    <span class="textFR">Jeu</span>
+                    <span class="textEN NotLangue" >Game</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FJeuNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FJeuBlanc"/>
                 </a>
                 <div id="AllCombat">
                     <ul>
@@ -90,6 +101,8 @@
                 <a href="#AllObjets">
                     <span class="textFR">Objets</span>
                     <span class="textEN NotLangue" >Objects</span>
+                    <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FObjetNoir"/>
+                    <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FObjetBlanc"/>
                 </a>
                 <div id="AllObjets">
                     <ul>
@@ -134,7 +147,7 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <div id="page-content-wrapper" id="top">
         <div class="container-fluid">
             <!--
             <span class="textFR"></span>
@@ -148,7 +161,50 @@
 
             </header>
             <div id="content">
-
+                <article>
+                    <p>
+                        <span class="textFR">Dans Soulworker, certaines <a href="#">armes et armures</a> nécessitent un plan + des <a class="Ressource" href="Ressources.html">ressources</a> pour être fabriqué. Il n’est pas possible de loot ces objets déjà fabriqué d’une quelconque manière.</span>
+                        <span class="textEN NotLangue" ></span>
+                    </p>
+                    <p>
+                        <span class="textFR">Il existent dans les jeu des <a href="#">armures</a> qui donnent un bonus de set et possèdent la rareté unique. Ces set ne sont fabricable que par des plans. Il existe 4 set principaux. Ces derniers se loot dans chacune des villes. En effet chaque ville possède respectivement 4,5,6 et 7, zones. Afin de drop les schémas permettant de fabriquer votre set vous devez battre les boss des 4 premières zones EN PARTANT DE LA FIN. Mais attention, vous ne pouvez drop le plan que sur l’episode 4 dément des dites zones.</span>
+                        <span class="textEN NotLangue" ></span>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <span class="textFR">Dans l’ordre du plus haut niveau au plus bas niveau, voici ce que vous pouvez avoir:</span>
+                        <span class="textEN NotLangue" ></span>
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="textFR">1er donjon: Les plans de l’arme et des jambières.</span>
+                            <span class="textEN NotLangue" ></span>
+                        </li>
+                        <li>
+                            <span class="textFR">2eme donjon: Le plan de la cuirasse.</span>
+                            <span class="textEN NotLangue" ></span>
+                        </li>
+                        <li>
+                            <span class="textFR">3eme donjon: Le plan des épaulières.</span>
+                            <span class="textEN NotLangue" ></span>
+                        </li>
+                        <li>
+                            <span class="textFR">4eme donjon: Le plan du casque.</span>
+                            <span class="textEN NotLangue" ></span>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <p>
+                        <span class="textFR">Attention, vous pouvez drop le schéma du set d’un autre personnage que le vôtre, auquelle cas nous vous conseillons de le stocker dans la banque si vous possédez ce personnage ou comptez en faire un, ou alors le vendre à <a href="#">l’HDV</a>.</span>
+                        <span class="textEN NotLangue" ></span>
+                    </p>
+                    <p>
+                        <span class="textFR">Il existe un type de plan qui permet de fabriquer des armes et armures de rareté bleu mais nous ne savons pas comment les obtenirs. Si vous possédez cette informations veuillez nous l’envoyer par mail via l’onglet <a class="Contact" href="#">CONTACT</a> du site. Nous vous remercions de votre aide.</span>
+                        <span class="textEN NotLangue" ></span>
+                    </p>
+                </article>
             </div>
             <footer>
 
@@ -157,6 +213,9 @@
     </div>
     <!-- /#page-content-wrapper -->
 
+</div>
+<div id="slideToggle">
+    <a href='#top' class="toggle"></a>
 </div>
 </body>
 

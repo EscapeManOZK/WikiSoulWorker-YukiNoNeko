@@ -5,34 +5,3 @@
 .container-fluid h1, .container-fluid h5{
     text-align: center;
 }
-#content h5{
-    background: #333;
-    color: #fff;
-    padding: 8px;
-    margin-bottom: 0px;
-}
-#normaux,#elite,#boss,#EXPETOILE{
-    border-radius: 9px;
-    border: 1px solid black;
-    margin-bottom: 10px;
-}
-#descrip-normaux,#descrip-elite,#descrip-boss,#descrip-Exp{
-    background: rgba(51, 51, 51,0.15);
-    border-radius: 0px 0px 7px 7px;
-    padding: 10px;
-}
-.last{
-    margin-bottom: 0px;
-}
-
-@media(max-width:767px) {
-    #descrip-normaux,#descrip-elite,#descrip-boss,#descrip-Exp{
-        display: none;
-    }
-}
-.open{
-    border-radius: 7px 7px 0px 0px;
-}
-.closed{
-    border-radius: 7px;
-}

@@ -1,0 +1,44 @@
+#content h5{
+    background: #333;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 0px;
+}
+#menu1,#menu2,#menu3,#menu4,.menu{
+    border-radius: 9px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+#descrip1,#descrip2,#descrip3,#descrip4,.descrip{
+    background: rgba(51, 51, 51,0.15);
+    border-radius: 0px 0px 7px 7px;
+    padding: 10px;
+}
+.last{
+    margin-bottom: 0px;
+}
+
+@media(max-width:767px) {
+    #descrip1,#descrip2,#descrip3,#descrip4{
+        display: none;
+    }
+}
+.open{
+    border-radius: 7px 7px 0px 0px;
+}
+.closed{
+    border-radius: 7px;
+}
+.imageListe{
+    width: 15px;
+    -moz-transition: transform 0.75s;
+    -webkit-transition: transform 0.75s;
+    transition: transform 0.75s;
+}
+.imageListeNull{
+    display: none;
+}
+
+.flip {
+    transform: rotate(-180deg);
+}
