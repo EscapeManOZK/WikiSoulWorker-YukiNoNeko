@@ -46,7 +46,13 @@ function affiche() {
     $("#Lily").attr("href","/Personnage/Lily.html?"+string);
     $("#Stella").attr("href","/Personnage/Stella.html?"+string);
     $("#Jin").attr("href","/Personnage/Jin.html?"+string);
-
+    $("#Univers").attr("href", "/Jeu/Univers.html?"+string);
+    $("#Commerce").attr("href", "/Jeu/Commerce.html?"+string);
+    $("#Defis").attr("href", "/Jeu/Defis.html?"+string);
+    $("#Quetes").attr("href", "/Jeu/Quetes.html?"+string);
+    $("#ATH").attr("href", "/Jeu/ATH.html?"+string);
+    $("#PNJ").attr("href", "/Jeu/PNJ.html?"+string);
+    $("#Communaute").attr("href", "/Jeu/Communaute.html?"+string);
 }
 
 

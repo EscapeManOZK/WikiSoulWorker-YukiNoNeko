@@ -1,7 +1,3 @@
 #sidebar-wrapper {
-    background: url("../images/fondBarreNoir.jpg") repeat-y fixed;
-}
-
-.container-fluid h1, .container-fluid h5{
-    text-align: center;
+    background: url("../images/fondBarreCombat.jpg") no-repeat fixed, url("../images/fondBarreNoir.jpg") repeat-y fixed;
 }
