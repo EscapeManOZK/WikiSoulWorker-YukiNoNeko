@@ -93,6 +93,9 @@ $(document).ready(function() {
     $("#steam a").hover(function () {
         $("#steam span.fab").toggleClass('rotating');
     });
+    $("#imgSteam").hover(function () {
+        $("#steam span.fab").toggleClass('rotating');
+    });
 
     $("#Perso > a").on("click",  function() {
         $("#AllPerso").toggle("slow");
