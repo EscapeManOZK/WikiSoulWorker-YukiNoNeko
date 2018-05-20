@@ -8,6 +8,9 @@ var listO;
 var mobile=false;
 
 $(document).ready(function() {
+    var taille= window.innerHeight-$("header").height()-$("footer").height()-20-30;
+    if (taille>$("#content").height())
+    $("#content").css("height",taille);
     if (window.innerWidth<768){
         mobile=true;
         $("#wrapper").removeClass("toggled");
@@ -81,6 +84,14 @@ $(document).ready(function() {
     },function () {
         $("#FObjetNoir").addClass("imageNavNull");
         $("#FObjetBlanc").removeClass("imageNavNull");
+    });
+
+    $("#Mention").hover(function () {
+        $("#Mention span.far").toggleClass('rotating');
+    });
+
+    $("#steam a").hover(function () {
+        $("#steam span.fab").toggleClass('rotating');
     });
 
     $("#Perso > a").on("click",  function() {

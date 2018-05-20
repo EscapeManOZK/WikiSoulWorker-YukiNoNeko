@@ -13,12 +13,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
     <link href="../Assets/CSS/Outils.css" rel="stylesheet">
     <link href="../Assets/CSS/Objets.css" rel="stylesheet">
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../Assets/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="../Assets/JS/Gestion_Lien.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -248,8 +250,58 @@
                     </p>
                 </article>
             </div>
-            <footer>
+            <footer class="row">
+                <article class="footers 2 col-md-4 col-xs-4">
 
+                    <div class="textFR">
+                        <p><span class="fab fa-paypal"></span> Voulez vous faire une donation pour soutenir le wiki ? </p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="46JCHCJZNVMWQ">
+                            <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                    <div class="textEN NotLangue" >
+                        <p><span class="fab fa-paypal"></span> Do you want to make a donation to support the wiki? </p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="EGJVHJA5F3M3E">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                    <p> </p>
+
+                </article>
+                <article class="footers 1 col-md-4 col-xs-4">
+                    <p id="steam">
+                        <span class="fab fa-steam" ></span>
+                        <span class="textFR">Le jeu Soulworker sur </span>
+                        <span class="textEN NotLangue" >The Soulworker game on </span>
+                        <a href="https://store.steampowered.com/app/630100/" target="_blank">Steam</a>
+                    </p>
+                    <p><a href="https://store.steampowered.com/app/630100/" target="_blank"><img id="imgSteam" src="../Assets/images/sl-footers.jpg" alt="Soulworker"></a></p>
+                </article>
+                <article class="footers 1 col-md-4 col-xs-4">
+                    <p>
+                        <span class="fas fa-info"></span>
+                        <span class="textFR">Ce Wiki est maintenu et développé par la Guilde YukiNoNeko</span>
+                        <span class="textEN NotLangue" >This Wiki is maintained and developed by the YukiNoNeko Guild</span>
+                    </p>
+                    <p>
+                        <span class="fas fa-history"></span>
+                        <span class="textFR">Dernière mise à jour du wiki : 21/05/2018</span>
+                        <span class="textEN NotLangue" >Last wiki update: 21/05/2018</span>
+                    </p>
+                    <p>
+                        <a id="Mention" href="">
+                            <span class="far fa-copyright"></span>
+                            <span class="textFR">Mentions légales</span>
+                            <span class="textEN NotLangue" >Legal Notice</span>
+                        </a>
+                    </p>
+                </article>
             </footer>
         </div>
     </div>

@@ -155,6 +155,87 @@ header{
     border-radius: 0px 0px 15px 15px;
     padding: 0px;
 }
+
+.imageNav{
+    width: 15px;
+    -moz-transition: transform 0.75s;
+    -webkit-transition: transform 0.75s;
+    transition: transform 0.75s;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.rotating {
+    -webkit-animation: rotating 1s linear infinite;
+    -moz-animation: rotating 1s linear infinite;
+    -ms-animation: rotating 1s linear infinite;
+    -o-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+}
+
+footer {
+
+}
+.imageNavNull{
+    display: none;
+}
+
+.flip {
+    transform: rotate(-180deg);
+}
+footer.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+footer{
+    border-top: 1px solid black;
+    box-shadow: 0px -10px 5px -4px rgba(0,0,0,0.54);
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footers{
+    text-align: center;
+}
+
+#LogoDonation{
+    font-family: FontAwesome;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: 'f4b9';
+}
+
 @media(min-width:768px) {
     header{
     position: -webkit-sticky;
@@ -163,7 +244,12 @@ header{
     #content{
         padding: 15px;
     }
-
+    #imgSteam{
+        width: 50%;
+    }
+    footer{
+        margin-bottom: -20px;
+    }
 }
 @media(max-width:767px) {
     #content{
@@ -175,28 +261,9 @@ header{
         -ms-transform: translateX(250px);
         transform: translateX(250px);
     }
-}
-.imageNav{
-width: 15px;
-    -moz-transition: transform 0.75s;
-    -webkit-transition: transform 0.75s;
-    transition: transform 0.75s;
-}
-.imageNavNull{
-    display: none;
-}
+    #imgSteam{
+        display: none;
+    }
 
-.flip {
-    transform: rotate(-180deg);
-}
-footer{
-    box-shadow: inset 10px 0px 5px -4px rgba(0,0,0,0.54),inset 0px 10px 5px -4px rgba(0,0,0,0.54);
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
 
-}
-.footers{
-    display: inline-block;
-    text-align: center;
 }
