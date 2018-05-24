@@ -6,8 +6,10 @@ var list;
 var listC;
 var listO;
 var mobile=false;
+var dateMaj="24/05/2018";
 
 $(document).ready(function() {
+    $("#date").html(dateMaj.toString());
     var taille= window.innerHeight-$("header").height()-$("footer").height()-20-30;
     if (taille>$("#content").height())
     $("#content").css("height",taille);
