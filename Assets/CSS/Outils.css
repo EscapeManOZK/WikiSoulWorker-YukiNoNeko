@@ -235,6 +235,13 @@ footer{
     -moz-osx-font-smoothing: grayscale;
     content: 'f4b9';
 }
+.imgInverse{
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
+    -ms-filter: invert(1);
+}
 
 @media(min-width:768px) {
     header{
@@ -250,7 +257,11 @@ footer{
     footer{
         margin-bottom: -20px;
     }
+    .imgInverse{
+        transition:all 0.5s ease;
+    }
 }
+/*mobile*/
 @media(max-width:767px) {
     #content{
         padding-top: 15px;

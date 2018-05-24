@@ -63,27 +63,21 @@ $(document).ready(function() {
     });
 
     $("#Perso > a").hover(function(){
-        $("#FpersoNoir").removeClass("imageNavNull");
-        $("#FpersoBlanc").addClass("imageNavNull");
+        $("#Fperso").addClass("imgInverse");
     },function () {
-        $("#FpersoNoir").addClass("imageNavNull");
-        $("#FpersoBlanc").removeClass("imageNavNull");
+        $("#Fperso").removeClass("imgInverse");
     });
 
     $("#Combat > a").hover(function(){
-        $("#FJeuNoir").removeClass("imageNavNull");
-        $("#FJeuBlanc").addClass("imageNavNull");
+        $("#FJeu").addClass("imgInverse");
     },function () {
-        $("#FJeuNoir").addClass("imageNavNull");
-        $("#FJeuBlanc").removeClass("imageNavNull");
+        $("#FJeu").removeClass("imgInverse");
     });
 
     $("#Objet > a").hover(function(){
-        $("#FObjetNoir").removeClass("imageNavNull");
-        $("#FObjetBlanc").addClass("imageNavNull");
+        $("#FObjet").addClass("imgInverse");
     },function () {
-        $("#FObjetNoir").addClass("imageNavNull");
-        $("#FObjetBlanc").removeClass("imageNavNull");
+        $("#FObjet").removeClass("imgInverse");
     });
 
     $("#Mention").hover(function () {
@@ -99,65 +93,52 @@ $(document).ready(function() {
 
     $("#Perso > a").on("click",  function() {
         $("#AllPerso").toggle("slow");
-        $("#FpersoNoir").toggleClass('flip');
-        $("#FpersoBlanc").toggleClass('flip');
+        $("#Fperso").toggleClass('flip');
         if(etatmanu)etatmanu=false;else etatmanu=true;
-        if(mobile){
             if (etatmenuC){
                 $("#AllCombat").toggle("slow");
-                $("#FJeuNoir").toggleClass('flip');
-                $("#FJeuBlanc").toggleClass('flip');
+                $("#FJeu").toggleClass('flip');
                 etatmenuC=false;
             }
             if (etatmenuO){
                 $("#AllObjets").toggle("slow");
-                $("#FObjetNoir").toggleClass('flip');
-                $("#FObjetBlanc").toggleClass('flip');
+                $("#FObjet").toggleClass('flip');
                 etatmenuO=false;
             }
-        }
+
         affiche();
     });
     $("#Combat > a").on("click",  function() {
         $("#AllCombat").toggle("slow");
-        $("#FJeuNoir").toggleClass('flip');
-        $("#FJeuBlanc").toggleClass('flip');
+        $("#FJeu").toggleClass('flip');
         if(etatmenuC)etatmenuC=false;else etatmenuC=true;
-        if(mobile){
             if (etatmanu){
                 $("#AllPerso").toggle("slow");
-                $("#FpersoNoir").toggleClass('flip');
-                $("#FpersoBlanc").toggleClass('flip');
+                $("#Fperso").toggleClass('flip');
                 etatmanu=false;
             }
             if (etatmenuO){
                 $("#AllObjets").toggle("slow");
-                $("#FObjetNoir").toggleClass('flip');
-                $("#FObjetBlanc").toggleClass('flip');
+                $("#FObjet").toggleClass('flip');
                 etatmenuO=false;
             }
-        }
+
         affiche();
     });
     $("#Objet > a").on("click",  function() {
         $("#AllObjets").toggle("slow");
-        $("#FObjetNoir").toggleClass('flip');
-        $("#FObjetBlanc").toggleClass('flip');
+        $("#FObjet").toggleClass('flip');
         if(etatmenuO)etatmenuO=false;else etatmenuO=true;
-        if(mobile){
             if (etatmenuC){
                 $("#AllCombat").toggle("slow");
-                $("#FJeuNoir").toggleClass('flip');
-                $("#FJeuBlanc").toggleClass('flip');
+                $("#FJeu").toggleClass('flip');
                 etatmenuC=false;
             }
             if (etatmanu){
                 $("#AllPerso").toggle("slow");
-                $("#FpersoNoir").toggleClass('flip');
-                $("#FpersoBlanc").toggleClass('flip');
+                $("#Fperso").toggleClass('flip');
                 etatmanu=false;
             }
-        }
         affiche();
     });
 

@@ -53,63 +53,102 @@
                     </a>
                 </li>
                 <li id = "Perso">
-                    <a href="#">
-                        <span class="textFR">Personnages</span>
-                        <span class="textEN NotLangue" >Characters</span>
-                        <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FpersoNoir"/>
-                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FpersoBlanc"/>
-                    </a>
-                    <div id="AllPerso">
-                        <ul>
-                            <li >
-                                <a id="Haru" href="Personnage/Haru.html">Haru Estia</a>
-                            </li>
-                            <li>
-                                <a id="Erwin" href="Personnage/Erwin.html">Erwin Archlight</a>
-                            </li>
-                            <li>
-                                <a id="Lily" href="Personnage/Lily.html">Lily Bloomerchen</a>
-                            </li>
-                            <li>
-                                <a  id="Stella" href="Personnage/Stella.html">Stella Unibell</a>
-                            </li>
-                            <li>
-                                <a  id="Jin" href="Personnage/Jin.html">Jin Seipatsu</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li id="Combat">
-                    <a href="#AllCombat">
-                        <span class="textFR">Jeu</span>
-                        <span class="textEN NotLangue" >Game</span>
-                        <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FJeuNoir"/>
-                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FJeuBlanc"/>
-                    </a>
-                    <div id="AllCombat">
-                        <ul>
-                            <li>
-                                <a id="Combats" href="">
-                                    <span class="textFR">Combats</span>
-                                    <span class="textEN NotLangue" >Fights</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="Exp" href="">
-                                    <span class="textFR">Expérience</span>
-                                    <span class="textEN NotLangue" >Expertise</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li id="Objet">
-                    <a href="#AllObjets">
-                        <span class="textFR">Objets</span>
-                        <span class="textEN NotLangue" >Objects</span>
-                        <img src="../Assets/images/flèche-Noir.png" title="flèche" class="imageNav imageNavNull" id="FObjetNoir"/>
-                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FObjetBlanc"/>
-                    </a>
+                    <a href="#AllPerso">
+                                        <span class="textFR">Personnages</span>
+                                        <span class="textEN NotLangue" >Characters</span>
+                                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="Fperso"/>
+                                    </a>
+                                    <div id="AllPerso">
+                                        <ul>
+                                            <li >
+                                                <a id="Haru" href="Personnage/Haru.html">Haru Estia</a>
+                                            </li>
+                                            <li>
+                                                <a id="Erwin" href="Personnage/Erwin.html">Erwin Archlight</a>
+                                            </li>
+                                            <li>
+                                                <a id="Lily" href="Personnage/Lily.html">Lily Bloomerchen</a>
+                                            </li>
+                                            <li>
+                                                <a  id="Stella" href="Personnage/Stella.html">Stella Unibell</a>
+                                            </li>
+                                            <li>
+                                                <a  id="Jin" href="Personnage/Jin.html">Jin Seipatsu</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="Combat">
+                                    <a href="#AllCombat">
+                                        <span class="textFR">Jeu</span>
+                                        <span class="textEN NotLangue" >Game</span>
+                                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FJeu"/>
+                                    </a>
+                                    <div id="AllCombat">
+                                        <ul>
+                                            <li>
+                                                <a id="Combats" href="">
+                                                    <span class="textFR">Combats</span>
+                                                    <span class="textEN NotLangue" >Fights</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="Exp" href="">
+                                                    <span class="textFR">Expérience</span>
+                                                    <span class="textEN NotLangue" >Expertise</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="Univers" href="">
+                                                    <span class="textFR">L'univers</span>
+                                                    <span class="textEN NotLangue" >The universe</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="Commerce" href="">
+                                                    <span class="textFR">Commerce</span>
+                                                    <span class="textEN NotLangue" >Trade</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="Defis" href="">
+                                                    <span class="textFR">Défis</span>
+                                                    <span class="textEN NotLangue" >Challenges</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="Quetes" href="">
+                                                    <span class="textFR">Quêtes</span>
+                                                    <span class="textEN NotLangue" >Quests</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="ATH" href="">
+                                                    <span class="textFR">L'ATH</span>
+                                                    <span class="textEN NotLangue" >ATH</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="PNJ" href="">
+                                                    <span class="textFR">Les PNJ</span>
+                                                    <span class="textEN NotLangue" >PNJ</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="Communaute" href="">
+                                                    <span class="textFR">Communautée</span>
+                                                    <span class="textEN NotLangue" >Community</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="Objet">
+                                    <a href="#AllObjets">
+                                        <span class="textFR">Objets</span>
+                                        <span class="textEN NotLangue" >Objects</span>
+                                        <img src="../Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FObjet"/>
+                                    </a>
                     <div id="AllObjets">
                         <ul>
                             <li>
