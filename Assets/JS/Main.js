@@ -8,11 +8,15 @@ var listO;
 var mobile=false;
 var dateMaj="02/06/2018";
 
+function GestionHauteur() {
+    var taille = window.innerHeight - $("header").height() - $("footer").height() - 20 - 30;
+    if (taille > $("#content").height())
+        $("#content").css("height", taille);
+}
+
 $(document).ready(function() {
     $("#date").html(dateMaj.toString());
-    var taille= window.innerHeight-$("header").height()-$("footer").height()-20-30;
-    if (taille>$("#content").height())
-    $("#content").css("height",taille);
+    GestionHauteur();
     if (window.innerWidth<768){
         mobile=true;
         $("#wrapper").removeClass("toggled");
@@ -56,6 +60,7 @@ $(document).ready(function() {
     affiche();
     $("#Langue").on("change",function() {
         affiche();
+        GestionHauteur();
         if (mobile) {
             $("#wrapper").removeClass("toggled");
         }
@@ -106,6 +111,7 @@ $(document).ready(function() {
             }
 
         affiche();
+        GestionHauteur();
     });
     $("#Combat > a").on("click",  function() {
         $("#AllCombat").toggle("slow");
@@ -123,6 +129,7 @@ $(document).ready(function() {
             }
 
         affiche();
+        GestionHauteur();
     });
     $("#Objet > a").on("click",  function() {
         $("#AllObjets").toggle("slow");
@@ -139,6 +146,7 @@ $(document).ready(function() {
                 etatmanu=false;
             }
         affiche();
+        GestionHauteur();
     });
 
 });
