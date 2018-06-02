@@ -6,7 +6,7 @@ var list;
 var listC;
 var listO;
 var mobile=false;
-var dateMaj="24/05/2018";
+var dateMaj="02/06/2018";
 
 $(document).ready(function() {
     $("#date").html(dateMaj.toString());
