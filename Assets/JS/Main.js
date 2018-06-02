@@ -34,23 +34,20 @@ $(document).ready(function() {
     }
     if (list == "on") {
         etatmanu = true;
-        $("#FpersoNoir").toggleClass('flip');
-        $("#FpersoBlanc").toggleClass('flip');
+        $("#Fperso").toggleClass('flip');
     } else {
         etatmanu = false;
         $("#AllPerso").css("display","none");
     }
     if (listC == "on") {
-        $("#FJeuNoir").toggleClass('flip');
-        $("#FJeuBlanc").toggleClass('flip');
+        $("#FJeu").toggleClass('flip');
         etatmenuC = true;
     } else {
         etatmenuC = false;
         $("#AllCombat").css("display","none");
     }
     if (listO == "on") {
-        $("#FObjetNoir").toggleClass('flip');
-        $("#FObjetBlanc").toggleClass('flip');
+        $("#FObjet").toggleClass('flip');
         etatmenuO = true;
     } else {
         etatmenuO = false;
