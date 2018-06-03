@@ -242,6 +242,9 @@ footer{
     -o-filter: invert(1);
     -ms-filter: invert(1);
 }
+a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."]{
+    display: none;
+}
 
 @media(min-width:768px) {
     header{
