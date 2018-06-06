@@ -199,9 +199,7 @@ header{
     animation: rotating 1s linear infinite;
 }
 
-footer {
 
-}
 .imageNavNull{
     display: none;
 }
@@ -261,7 +259,8 @@ a[title="Hosted on free web hosting 000webhost.com. Host your own website for FR
         margin-bottom: -20px;
     }
     .imgInverse{
-        transition:all 0.5s ease;
+        -webkit-transition:all 0.5s ease-in-out;
+        transition:all 0.5s ease-in-out;
     }
 }
 /*mobile*/
@@ -270,6 +269,8 @@ a[title="Hosted on free web hosting 000webhost.com. Host your own website for FR
         padding-top: 15px;
     }
     #wrapper.toggled + #slideToggle {
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
         -moz-transform: translateX(250px);
         -webkit-transform: translateX(250px);
         -ms-transform: translateX(250px);
@@ -280,4 +281,20 @@ a[title="Hosted on free web hosting 000webhost.com. Host your own website for FR
     }
 
 
+}
+/*slide icon*/
+.slideNone{
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px);
+}
+.select2-search.select2-search--dropdown{
+    display: none;
+}
+select2.select2-container.select2-container--default{
+    width: 100%;
+    height: 100%;
 }

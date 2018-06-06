@@ -6,7 +6,7 @@ var list;
 var listC;
 var listO;
 var mobile=false;
-var dateMaj="02/06/2018";
+var dateMaj="05/06/2018";
 
 function GestionHauteur() {
     var taille = window.innerHeight - $("header").height() - $("footer").height() - 20 - 30;
@@ -14,7 +14,10 @@ function GestionHauteur() {
         $("#content").css("height", taille);
 }
 
+
 $(document).ready(function() {
+
+    $("#slideToggle").css("top",window.innerHeight/3-10);
     $("#date").html(dateMaj.toString());
     GestionHauteur();
     if (window.innerWidth<768){
@@ -148,6 +151,44 @@ $(document).ready(function() {
         affiche();
         GestionHauteur();
     });
+
+    $(window).scroll(function(){
+        var scrollMin=50;
+        if (mobile)scrollMin=150;
+        if ($(this).scrollTop() > scrollMin) {
+            $('.scrollToTop').fadeIn();
+            if ($("#slideToggle").hasClass('slideNone')) {
+                $("#slideToggle").removeClass('slideNone');
+            }
+        } else {
+            $('.scrollToTop').fadeOut();
+            if (!$("#slideToggle").hasClass('slideNone')) {
+                $("#slideToggle").addClass('slideNone');
+            }
+        }
+    });
+
+    //Click event to scroll to top
+    $('#slideToggle').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+    function format (option) {
+        console.log(option);
+        if (!option.id) { return option.text; }
+        var dev="";
+        if (window.location.href.includes('WikiSoulWorker-YukiNoNeko'))
+            dev='/WikiSoulWorker-YukiNoNeko';
+        var ob = "<span class='imgSelect'><span class='imageAnime "+option.id+"'><img class='hvr-glow' src=\""+dev+"/Assets/images/"+option.id+"Logo.png\" title='"+option.id+"'/></span></span>";	// replace image source with option.img (available in JSON)
+        return ob;
+    };
+    $("#Langue").select2({
+        templateResult: format,
+        templateSelection: format,
+        escapeMarkup: function(m) { return m; }
+    });
+    $("#form form div .select2").css("width","auto");
 
 });
 

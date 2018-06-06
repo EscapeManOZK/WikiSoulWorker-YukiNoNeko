@@ -14,11 +14,18 @@
     <!-- Bootstrap core CSS -->
     <link href="../Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- CSS -->
+
     <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
     <link href="../Assets/CSS/Langue.css" rel="stylesheet">
     <link href="../Assets/CSS/Contact.css" rel="stylesheet">
+    <link href="../Assets/CSS/select2.min.css" rel="stylesheet" />
+        <link href="../Assets/CSS/hover.css" rel="stylesheet" >
+
+        <!-- JS -->
+
     <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../Assets/JS/select2.min.js"></script>
     <script type="text/javascript" src="../Assets/JS/Menu_deroulant.js"></script>
     <script type="text/javascript" src="../Assets/JS/Main.js"></script>
 </head>
