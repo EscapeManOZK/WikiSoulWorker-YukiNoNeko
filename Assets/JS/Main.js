@@ -9,10 +9,10 @@ var mobile=false;
 var dateMaj="06/06/2018";
 
 function GestionHauteur() {
+    $("#content").css("height", "auto");
     var taille = window.innerHeight - $("header").height() - $("footer").height() - 20 - 30;
     if (taille > $("#content").height())
         $("#content").css("height", taille);
-    else $("#content").css("height", "auto");
 }
 
 
