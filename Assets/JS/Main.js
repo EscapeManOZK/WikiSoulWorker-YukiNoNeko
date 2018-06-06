@@ -6,7 +6,7 @@ var list;
 var listC;
 var listO;
 var mobile=false;
-var dateMaj="05/06/2018";
+var dateMaj="06/06/2018";
 
 function GestionHauteur() {
     var taille = window.innerHeight - $("header").height() - $("footer").height() - 20 - 30;
