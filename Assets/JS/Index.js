@@ -1,7 +1,8 @@
 $(document).ready(function() {
     $.ajax({
-        url: "/Assets/PHP/Index.php?lang="+lang, success: function (result) {
+        url: "/Assets/PHP/Index.php", success: function (result) {
             $("#content").html(result);
+            GestionHauteur();
         }
     });
-}
+});

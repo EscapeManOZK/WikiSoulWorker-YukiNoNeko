@@ -1,8 +1,4 @@
 <?php
-$lang="FR";
-if(isset($_GET['lang'])&&$_GET['lang']=="EN")
-    $lang="EN";
-
 // Paramètres de connexio
 $user = 'id5461842_escapeman';
 $password = 'Romozk17r-BD000';
@@ -13,13 +9,19 @@ $pdodsn = "mysql:host=localhost;dbname=id5461842_mail";
 // Connexion PDO
 $pdo = new PDO($pdodsn, $user, $password);
 
-$requete = "Select Titre_".$lang.",Description_".$lang." from Accueil_Article ";
-$rto= "<table>";
+$requete = "Select * from Accueil_Article  ORDER BY `Accueil_Article`.`ID` DESC";
+$rto= "<div id='contentArticle'>";
 foreach ($pdo->query($requete) as $row) {
+    $rto.="<article>";
+    $rto.="<div class='ArticleTitle'><h4><span class=\"textFR\">".$row['Titre_FR']."</span><span class=\"textEN NotLangue\" >".$row['Titre_EN']."</span></h4></div>";
+    $rto.="<div class='content'><p><span class=\"textFR\">".$row['Description_FR']."</span><span class=\"textEN NotLangue\" >".$row['Description_EN']."</span></p></div>";
+    $rto.="<div class='ArticleFooter'><p>".$row['Lien']."</p><p>".$row['Date']."</p></div>";
+    $rto.="</article>";
+
     // affichage des compositeur avec leur image et leur liste d'oeuvre
-    $rto.= "<tr><td> <p>" . $row['User']. "  " . $row['Role'] . "</p></td></tr>";
+    //$rto.= "<tr><td> <p>" . $row['User']. "  " . $row['Role'] . "</p></td></tr>";
 }
-$rto.= "</table>";
+$rto.= "</div>";
 echo $rto;
 
 $pdo = null;
