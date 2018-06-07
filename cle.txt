@@ -1,5 +1,7 @@
 les images : image_id:1
 les titres : span:
+retour à la ligne + espace: \n
+liste : /r_
 
 
 https://fr.000webhost.com/members/website/soulworkerwiki/files

@@ -107,9 +107,10 @@
     height: 2.25em;
     right: 5px;
     position: fixed;
-    top: 50%;
+    bottom: 20px;
     width: 3.25em;
     z-index: 10001;
+    cursor: pointer;
 }
 
 #slideToggle .toggle {

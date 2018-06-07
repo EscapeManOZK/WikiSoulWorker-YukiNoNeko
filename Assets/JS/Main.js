@@ -18,9 +18,7 @@ function GestionHauteur() {
 
 $(document).ready(function() {
 
-    $("#slideToggle").css("top",window.innerHeight/3-10);
     $("#date").html(dateMaj.toString());
-    GestionHauteur();
     if (window.innerWidth<768){
         mobile=true;
         $("#wrapper").removeClass("toggled");
@@ -176,7 +174,6 @@ $(document).ready(function() {
     });
 
     function format (option) {
-        console.log(option);
         if (!option.id) { return option.text; }
         var dev="";
         if (window.location.href.includes('WikiSoulWorker-YukiNoNeko'))
@@ -190,6 +187,7 @@ $(document).ready(function() {
         escapeMarkup: function(m) { return m; }
     });
     $("#form form div .select2").css("width","auto");
+    GestionHauteur();
 
 });
 
