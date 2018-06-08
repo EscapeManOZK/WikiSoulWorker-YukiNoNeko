@@ -6,7 +6,7 @@ var list;
 var listC;
 var listO;
 var mobile=false;
-var dateMaj="06/06/2018";
+var dateMaj="08/06/2018";
 
 function GestionHauteur() {
     $("#content").css("height", "auto");
