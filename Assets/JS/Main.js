@@ -178,7 +178,7 @@ $(document).ready(function() {
         var dev="";
         if (window.location.href.includes('WikiSoulWorker-YukiNoNeko'))
             dev='/WikiSoulWorker-YukiNoNeko';
-        var ob = "<span class='imgSelect'><span class='imageAnime "+option.id+"'><img class='hvr-glow' src=\""+dev+"/Assets/images/"+option.id+"Logo.png\" title='"+option.id+"'/></span></span>";	// replace image source with option.img (available in JSON)
+        var ob = "<span class='imgSelect'><span class='imageAnime "+option.id+"'><img src=\""+dev+"/Assets/images/"+option.id+"Logo.png\" title='"+option.id+"'/>   "+option.text+"</span></span>";	// replace image source with option.img (available in JSON)
         return ob;
     };
     $("#Langue").select2({
