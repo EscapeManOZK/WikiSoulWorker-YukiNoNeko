@@ -120,9 +120,9 @@ foreach ($pdo->query($requete) as $row) {
                 $resize="large";
             $textAlt=$Image->getImage(intval($code)-1)->getMTitreEN();
             if ($listOpen) {
-                $textENLast .= "<li class='imageArticle imageArticleLi {$banner}'><img src='/Assets/PHP/image.php?code={$code}' class='{$banner}ImageEN {$resize}' id='{$textID}' alt='{$textAlt}'/></li>";
+                $textENLast .= "<li class='imageArticle imageArticleLi {$banner}'><img src='/Assets/PHP/Index/image.php?code={$code}' class='{$banner}ImageEN {$resize}' id='{$textID}' alt='{$textAlt}'/></li>";
             }else {
-                $textENLast.="<p class='imageArticle {$banner}'><img src='/Assets/PHP/image.php?code={$code}' class='{$banner}ImageEN {$resize}' id='{$textID}' alt='{$textAlt}'/></p>";
+                $textENLast.="<p class='imageArticle {$banner}'><img src='/Assets/PHP/Index/image.php?code={$code}' class='{$banner}ImageEN {$resize}' id='{$textID}' alt='{$textAlt}'/></p>";
 
             }
             $use=true;

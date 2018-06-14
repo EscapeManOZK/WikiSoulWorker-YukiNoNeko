@@ -20,13 +20,16 @@ class LogIn
     }
 
     public function logIn(){
+        define('PREFIX_SALT','WikiGameurse');
+        define('SUFFIX_SALT','Soulworker');
+        $mdp=sha1(PREFIX_SALT.$this->m_Mdp.SUFFIX_SALT);
         // Paramètres de connexio
         $user = 'id5461842_escapeman';
         $password = 'Romozk17r-BD000';
         // Chaîne de connexion (Windows)
         $pdodsn = "mysql:host=localhost;dbname=id5461842_mail";
         $pdo = new PDO($pdodsn, $user, $password);
-        $requete = "SELECT * FROM `Admin` WHERE User LIKE '{$this->m_ID}' AND Mdp LIKE '{$this->m_Mdp}'  ";
+        $requete = "SELECT * FROM `Admin` WHERE User LIKE '{$this->m_ID}' AND Mdp LIKE '{$mdp}'  ";
         $i=0;
         $id="";
         foreach ($pdo->query($requete) as $row) {
