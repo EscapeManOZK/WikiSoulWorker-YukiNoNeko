@@ -6,7 +6,7 @@
  * Time: 09:24
  */
 
-include ('ImageClass.php');
+include('ImageClass.php');
 class GestionImage
 {
     private $ImageArray = array();

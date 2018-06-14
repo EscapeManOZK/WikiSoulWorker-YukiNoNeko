@@ -18,7 +18,7 @@ $(document).ready(function() {
     $("#Wait").css("margin-top",tail);
     var taille = $("#content").width()-22;
     $.ajax({
-        url: "/Assets/PHP/Index.php?mobile="+taille, success: function (result) {
+        url: "/Assets/PHP/Index/Index.php?mobile="+taille, success: function (result) {
             setTimeout(function(){
                 $("#content").html(result);
                 GestionHauteur();

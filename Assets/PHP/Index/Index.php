@@ -51,9 +51,9 @@ foreach ($pdo->query($requete) as $row) {
                 $resize="large";
             $textAlt=$Image->getImage(intval($code)-1)->getMTitreFR();
             if ($listOpen) {
-                $textFRLast .= "<li class='imageArticle imageArticleLi {$banner}'><img src='/Assets/PHP/image.php?code={$code}' class='{$banner}ImageFR {$resize}' id='{$textID}' alt='{$textAlt}'/></li>";
+                $textFRLast .= "<li class='imageArticle imageArticleLi {$banner}'><img src='/Assets/PHP/Index/image.php?code={$code}' class='{$banner}ImageFR {$resize}' id='{$textID}' alt='{$textAlt}'/></li>";
             }else {
-                $textFRLast.="<p class='imageArticle {$banner}'><img src='/Assets/PHP/image.php?code={$code}' class='{$banner}ImageFR {$resize}' id='{$textID}' alt='{$textAlt}'/></p>";
+                $textFRLast.="<p class='imageArticle {$banner}'><img src='/Assets/PHP/Index/image.php?code={$code}' class='{$banner}ImageFR {$resize}' id='{$textID}' alt='{$textAlt}'/></p>";
             }
             $use=true;
         }
