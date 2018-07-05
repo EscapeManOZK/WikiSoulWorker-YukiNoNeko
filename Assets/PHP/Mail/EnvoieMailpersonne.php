@@ -22,7 +22,7 @@ if ($mail==""||$lang==""||$img==""){
     }
     $titre='';
     if ($lang=="FR"){
-        $corp="Votre réponse as bien été enregistée.\n Celle ci sera traitée dans les plus bref délais par l'équipe de modération du site.\n Vous pourrai être contacté par la suite si nous avons besion d'explication.".$texteLang."\n\n Merci de votre participation pour l'amélioration du Wiki.\n\n L'équipe de modération";
+        $corp="Votre réponse as bien été enregistée.\n Celle ci sera traitée dans les plus bref délais par l'équipe de modération du site.\n Vous pourrez être contacté par la suite si nous avons besion d'explications.".$texteLang."\n\n Merci de votre participation pour l'amélioration du Wiki.\n\n L'équipe de modération";
         $titre="Comfirmation de la reception de votre message";
     }else{
         $corp="Your answer has been saved.\n This will be treated as soon as possible by the moderation team of the website.\n You can be contacted later if we need explanation.".$texteLang."\n\n Thank you for your participation in improving the Wiki.\n\n The moderation team";

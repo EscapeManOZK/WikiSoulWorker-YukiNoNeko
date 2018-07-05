@@ -81,6 +81,7 @@ function mail() {
     }
     $("#content").css("height", "auto");
     if (inser){
+        $("#loading").css("display","block");
         var donne="mail="+m_mail+"&titre="+titre+"&corp="+corp+"&lang="+lang+"&img="+img;
         $.ajax({
             type: "POST",
@@ -115,6 +116,7 @@ function mail() {
                                             document.getElementById("corp").value=document.getElementById("corp").value.substr(i);
                                         }
                                     }*/
+                                    $("#loading").css("display","none");
                                 }
                             });
                         }

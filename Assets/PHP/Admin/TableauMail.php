@@ -22,9 +22,9 @@ $requete = "SELECT * FROM `Mail` ";
 foreach ($pdo->query($requete) as $row) {
     if($row!=null) {
         $inser=true;
-        $response.="<tr><td class=\"text-left\">{$row['Mail']}</td><td class=\"text-left\">{$row['Titre']}</td><td class=\"text-left\"><a id='r{$row['ID']}' onclick='infos()' href='#r{$row['ID']}'>Le mail</a> </td>";
+        $response.="<tr><td class=\"text-left\">{$row['Mail']}</td><td class=\"text-left\">{$row['Titre']}</td><td class=\"text-left\"><a id='r{$row['ID']}' onclick='infos({$row['ID']})' href='#r{$row['ID']}'>Le mail</a> </td>";
         if ($_SESSION['ROLE']=='1'){
-            $response.="<td class=\"text-left\"><a class='delete' id='{$row['ID']}' onclick='deleteHim()' href='#{$row['ID']}'>Supprimer</a></td>";
+            $response.="<td class=\"text-left\"><a class='delete' id='{$row['ID']}' onclick='deleteHim({$row['ID']})' href='#{$row['ID']}'>Supprimer</a></td>";
         }
         $response.="</tr>";
     }

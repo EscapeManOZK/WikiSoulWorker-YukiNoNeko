@@ -113,12 +113,8 @@ function deconnexion() {
     });
 }
 
-function deleteHim(){
+function deleteHim(id){
     $("#loading").css("display","block");
-    var id = window.location.href.split("#")[1];
-    if (id.includes("r")){
-        id=id.split("r")[1];
-    }
     $.ajax({
         type : "GET",
         url: "/Assets/PHP/Admin/Delete.php",
@@ -129,12 +125,8 @@ function deleteHim(){
     });
 }
 
-function infos(){
+function infos(id){
     $("#loading").css("display","block");
-    var id = window.location.href.split("#")[1];
-    if (id.includes("r")){
-        id=id.split("r")[1];
-    }
     $.ajax({
         type : "GET",
         url: "/Assets/PHP/Admin/mail.php",
