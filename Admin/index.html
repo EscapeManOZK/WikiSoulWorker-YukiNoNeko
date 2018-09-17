@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Rowczarek">
+    <link rel="icon" type="image/png" href="../Assets/images/logo.png" />
+
+    <title>Soulworker Wiki - Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link href="../Assets/CSS/simple-sidebar.css" rel="stylesheet">
+    <link href="../Assets/CSS/Outils.css" rel="stylesheet">
+    <link href="../Assets/CSS/Admin.css" rel="stylesheet">
+    <link href="../Assets/CSS/Bouton.css" rel="stylesheet">
+    <link href="../Assets/CSS/select2.min.css" rel="stylesheet" />
+    <link href="../Assets/CSS/hover.css" rel="stylesheet" >
+
+    <!-- JS -->
+
+    <script type="text/javascript" src="../Assets/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../Assets/JS/select2.min.js"></script>
+    <script type="text/javascript" src="../Assets/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Gestion_Lien.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Main.js"></script>
+    <script type="text/javascript" src="../Assets/JS/Admin.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1207453198189863",
+            enable_page_level_ads: true
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="wrapper" class="toggled">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" >
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="Accueil" href="/"><img src="../Assets/images/LogoSL.png" id="LogoSL"></a>
+            </li>
+            <li>
+                <a class="Accueil" href="/">
+                    <span class="textFR">Accueil</span>
+                    <span class="textEN NotLangue" >Home</span>
+                </a>
+            </li>
+            <li id = "Perso">
+                <a href="#AllPerso">
+                    <span class="textFR">Personnages</span>
+                    <span class="textEN NotLangue" >Characters</span>
+                    <img src="../Assets/images/fleche-Blanche.png" title="flèche" class="imageNav" id="Fperso"/>
+                </a>
+                <div id="AllPerso">
+                    <ul>
+                        <li >
+                            <a id="Haru" href="Personnage/Haru.html">Haru Estia</a>
+                        </li>
+                        <li>
+                            <a id="Erwin" href="Personnage/Erwin.html">Erwin Archlight</a>
+                        </li>
+                        <li>
+                            <a id="Lily" href="Personnage/Lily.html">Lily Bloomerchen</a>
+                        </li>
+                        <li>
+                            <a  id="Stella" href="Personnage/Stella.html">Stella Unibell</a>
+                        </li>
+                        <li>
+                            <a  id="Jin" href="Personnage/Jin.html">Jin Seipatsu</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="Combat">
+                <a href="#AllCombat">
+                    <span class="textFR">Jeu</span>
+                    <span class="textEN NotLangue" >Game</span>
+                    <img src="../Assets/images/fleche-Blanche.png" title="flèche" class="imageNav" id="FJeu"/>
+                </a>
+                <div id="AllCombat">
+                    <ul>
+                        <li>
+                            <a id="Combats" href="">
+                                <span class="textFR">Combats</span>
+                                <span class="textEN NotLangue" >Fights</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Exp" href="">
+                                <span class="textFR">Expérience</span>
+                                <span class="textEN NotLangue" >Expertise</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Univers" href="">
+                                <span class="textFR">L'univers</span>
+                                <span class="textEN NotLangue" >The universe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Commerce" href="">
+                                <span class="textFR">Commerce</span>
+                                <span class="textEN NotLangue" >Trade</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Defis" href="">
+                                <span class="textFR">Défis</span>
+                                <span class="textEN NotLangue" >Challenges</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Quetes" href="">
+                                <span class="textFR">Quêtes</span>
+                                <span class="textEN NotLangue" >Quests</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="ATH" href="">
+                                <span class="textFR">L'ATH</span>
+                                <span class="textEN NotLangue" >ATH</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="PNJ" href="">
+                                <span class="textFR">Les PNJ</span>
+                                <span class="textEN NotLangue" >PNJ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Communaute" href="">
+                                <span class="textFR">Communautée</span>
+                                <span class="textEN NotLangue" >Community</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="Objet">
+                <a href="#AllObjets">
+                    <span class="textFR">Objets</span>
+                    <span class="textEN NotLangue" >Objects</span>
+                    <img src="../Assets/images/fleche-Blanche.png" title="flèche" class="imageNav" id="FObjet"/>
+                </a>
+                <div id="AllObjets">
+                    <ul>
+                        <li>
+                            <a id="Akasha" href="">
+                                <span class="textFR">Akasha</span>
+                                <span class="textEN NotLangue" >Akasha</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Plan" href="">
+                                <span class="textFR">Plan</span>
+                                <span class="textEN NotLangue" >Blueprint</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="Ressource" href="">
+                                <span class="textFR">Ressources</span>
+                                <span class="textEN NotLangue" >Resources</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a id="Contact" href=""><span class="textFR">Contact</span>
+                    <span class="textEN NotLangue" >Contact us</span></a>
+            </li>
+            <li id="form">
+                <form >
+                    <div class="select-wrapper">
+                        <select id="Langue" style>
+                            <option value="FR" id="FR" >FR</option>
+                            <option value="EN" id="EN" >EN</option>
+                        </select>
+                    </div>
+                </form>
+            </li>
+        </ul>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" id="top">
+        <div class="container-fluid">
+            <!--
+            <span class="textFR"></span>
+            <span class="textEN NotLangue" ></span>
+            -->
+            <header>
+                <h1>
+                    <span class="textFR">Page Admin du site</span>
+                    <span class="textEN NotLangue" >Website Administration Page</span>
+                </h1>
+            </header>
+            <div id="content">
+                <div class="step login">
+                    <div id="ChampID">
+                        <p><label for="ID"><span class="textFR">Votre identifiant : </span>
+                            <span class="textEN NotLangue" >Your identifier : </span></label></p>
+                        <div class="div-champ">
+                            <input type="text" name="ID" id="ID" placeholder="Identifiant"/>
+                            <p id="IDError"><span class="textFR">L'identifiant est incorrect</span>
+                                <span class="textEN NotLangue" >The identifier is incorrect</span></p>
+                        </div>
+                    </div>
+                    <div id="ChampMDP">
+                        <p><label for="MDP"><span class="textFR">Votre mot de passe : </span>
+                            <span class="textEN NotLangue" >Your password : </span></label></p>
+                        <div class="div-champ">
+                            <input type="password" name="MDP" id="MDP" maxlength="50" placeholder="********">
+                            <p id="MDPError"><span class="textFR">Le mot de passe est incorrect</span>
+                                <span class="textEN NotLangue" >The password is incorrect</span></p>
+                            <p id="MDPIDError"><span class="textFR">Le mot de passe et/ou l'identifiant est incorrect</span>
+                                <span class="textEN NotLangue" >The password and / or username is incorrect</span></p>
+                        </div>
+                    </div>
+                    <div class="bouton">
+                        <a id="sendIt" class="btn btn-1"><span class="textFR">Se connecter</span>
+                            <span class="textEN NotLangue" >To log in</span></a>
+                    </div>
+                </div>
+                <div class="step main">
+                </div>
+            </div>
+            <footer class="row">
+                <article class="footers 2 col-md-4 col-xs-4">
+
+                    <div class="textFR">
+                        <p><span class="fab fa-paypal"></span> Voulez vous faire une donation pour soutenir le wiki ? </p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="46JCHCJZNVMWQ">
+                            <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                    <div class="textEN NotLangue" >
+                        <p><span class="fab fa-paypal"></span> Do you want to make a donation to support the wiki? </p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="EGJVHJA5F3M3E">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                    <p> </p>
+
+                </article>
+                <article class="footers 1 col-md-4 col-xs-4">
+                    <p id="steam">
+                        <span class="fab fa-steam" ></span>
+                        <span class="textFR">Le jeu Soulworker sur </span>
+                        <span class="textEN NotLangue" >The Soulworker game on </span>
+                        <a class="lienGame" href="https://fr.soulworker.gameforge.com/" target="_blank">Steam</a>
+                    </p>
+                    <p><a class="lienGame" href="https://fr.soulworker.gameforge.com/" target="_blank"><img id="imgSteam" src="../Assets/images/sl-footers.jpg" alt="Soulworker"></a></p>
+                </article>
+                <article class="footers 1 col-md-4 col-xs-4">
+                    <p>
+                        <span class="fas fa-info"></span>
+                        <span class="textFR">Ce Wiki est maintenu et développé par la Guilde YukiNoNeko</span>
+                        <span class="textEN NotLangue" >This Wiki is maintained and developed by the YukiNoNeko Guild</span>
+                    </p>
+                    <p>
+                        <span class="fas fa-history"></span>
+                        <span class="textFR">Dernière mise à jour du wiki : </span>
+                        <span class="textEN NotLangue" >Last wiki update: </span>
+                        <span id="date"></span>
+                    </p>
+                    <p>
+                        <a id="Mention" href="">
+                            <span class="far fa-copyright"></span>
+                            <span class="textFR">Mentions légales</span>
+                            <span class="textEN NotLangue" >Legal Notice</span>
+                        </a>
+                    </p>
+                </article>
+            </footer>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<div id="slideToggle" class="slideNone">
+    <a href='#top' class="toggle"></a>
+</div>
+<div id="loading" class="load">
+    <div id="laodContent">
+        <p>
+            <img src="../Assets/images/loader-search.gif"/>
+        </p>
+        <p>
+            <span class="textFR">Chargement</span>
+            <span class="textEN NotLangue" >Loading</span>
+        </p>
+    </div>
+</div>
+</body>
+
+</html>

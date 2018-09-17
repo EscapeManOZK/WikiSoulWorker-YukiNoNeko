@@ -6,7 +6,7 @@ var list;
 var listC;
 var listO;
 var mobile=false;
-var dateMaj="06/06/2018";
+var dateMaj="14/06/2018";
 
 function GestionHauteur() {
     $("#content").css("height", "auto");
@@ -18,9 +18,7 @@ function GestionHauteur() {
 
 $(document).ready(function() {
 
-    $("#slideToggle").css("top",window.innerHeight/3-10);
     $("#date").html(dateMaj.toString());
-    GestionHauteur();
     if (window.innerWidth<768){
         mobile=true;
         $("#wrapper").removeClass("toggled");
@@ -176,12 +174,11 @@ $(document).ready(function() {
     });
 
     function format (option) {
-        console.log(option);
         if (!option.id) { return option.text; }
         var dev="";
         if (window.location.href.includes('WikiSoulWorker-YukiNoNeko'))
             dev='/WikiSoulWorker-YukiNoNeko';
-        var ob = "<span class='imgSelect'><span class='imageAnime "+option.id+"'><img class='hvr-glow' src=\""+dev+"/Assets/images/"+option.id+"Logo.png\" title='"+option.id+"'/></span></span>";	// replace image source with option.img (available in JSON)
+        var ob = "<span class='imgSelect'><span class='imageAnime "+option.id+"'><img src=\""+dev+"/Assets/images/"+option.id+"Logo.png\" title='"+option.id+"'/>   "+option.text+"</span></span>";	// replace image source with option.img (available in JSON)
         return ob;
     };
     $("#Langue").select2({
@@ -190,6 +187,7 @@ $(document).ready(function() {
         escapeMarkup: function(m) { return m; }
     });
     $("#form form div .select2").css("width","auto");
+    GestionHauteur();
 
 });
 

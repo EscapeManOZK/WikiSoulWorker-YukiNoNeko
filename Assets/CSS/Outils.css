@@ -107,9 +107,9 @@
     height: 2.25em;
     right: 5px;
     position: fixed;
-    top: 50%;
     width: 3.25em;
     z-index: 10001;
+    cursor: pointer;
 }
 
 #slideToggle .toggle {
@@ -248,9 +248,11 @@ a[title="Hosted on free web hosting 000webhost.com. Host your own website for FR
     header{
     position: -webkit-sticky;
     position: sticky;
+        z-index: 10;
 }
     #content{
         padding: 15px;
+        z-index: 2;
     }
     #imgSteam{
         width: 50%;
@@ -261,6 +263,9 @@ a[title="Hosted on free web hosting 000webhost.com. Host your own website for FR
     .imgInverse{
         -webkit-transition:all 0.5s ease-in-out;
         transition:all 0.5s ease-in-out;
+    }
+    #slideToggle{
+        bottom: 100px;
     }
 }
 /*mobile*/
@@ -278,6 +283,9 @@ a[title="Hosted on free web hosting 000webhost.com. Host your own website for FR
     }
     #imgSteam{
         display: none;
+    }
+    #slideToggle{
+        bottom: 80px;
     }
 
 

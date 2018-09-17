@@ -60,7 +60,7 @@
                 <a href="#AllPerso">
                     <span class="textFR">Personnages</span>
                     <span class="textEN NotLangue" >Characters</span>
-                    <img src="Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="Fperso"/>
+                    <img src="Assets/images/fleche-Blanche.png" title="flèche" class="imageNav" id="Fperso"/>
                 </a>
                 <div id="AllPerso">
                     <ul>
@@ -86,7 +86,7 @@
                 <a href="#AllCombat">
                     <span class="textFR">Jeu</span>
                     <span class="textEN NotLangue" >Game</span>
-                    <img src="Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FJeu"/>
+                    <img src="Assets/images/fleche-Blanche.png" title="flèche" class="imageNav" id="FJeu"/>
                 </a>
                 <div id="AllCombat">
                     <ul>
@@ -151,7 +151,7 @@
                 <a href="#AllObjets">
                     <span class="textFR">Objets</span>
                     <span class="textEN NotLangue" >Objects</span>
-                    <img src="Assets/images/flèche-Blanche.png" title="flèche" class="imageNav" id="FObjet"/>
+                    <img src="Assets/images/fleche-Blanche.png" title="flèche" class="imageNav" id="FObjet"/>
                 </a>
                 <div id="AllObjets">
                     <ul>
@@ -209,10 +209,15 @@
                 </h4>
             </header>
             <div id="content">
-                <p>
-                    <span class="textFR">Page en cours de développement</span>
-                    <span class="textEN NotLangue" >Page under development</span>
-                </p>
+                <div id="Wait">
+                    <p>
+                        <img src="Assets/images/loader-search.gif"/>
+                    </p>
+                    <p>
+                        <span class="textFR">Chargement</span>
+                        <span class="textEN NotLangue" >Loading</span>
+                    </p>
+                </div>
             </div>
             <footer class="row">
                 <article class="footers 2 col-md-4 col-xs-4">
@@ -276,7 +281,11 @@
 <div id="slideToggle" class="slideNone">
     <a class="toggle"></a>
 </div>
-
+<div id="myModal" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" id="ImgMax">
+    <div id="caption"></div>
+</div>
 
 </body>
 
