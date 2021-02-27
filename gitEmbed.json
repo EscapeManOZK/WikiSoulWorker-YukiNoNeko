@@ -11,7 +11,7 @@
         {
             "type": "js",
             "label": "Entry point",
-            "path": "Assets/JS/main.js"
+            "path": "Assets/JS/Main.js"
         }
     ]
 }
