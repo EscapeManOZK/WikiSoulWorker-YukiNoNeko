@@ -1,0 +1,17 @@
+{
+    "owner": "EscapeManOZK",
+    "repo": "WikiSoulWorker-YukiNoNeko",
+    "ref": "master",
+    "embed": [
+        {
+            "type": "htmlpage",
+            "label": "Embedded HTML page",
+            "url": "index.html"
+        },
+        {
+            "type": "js",
+            "label": "Entry point",
+            "path": "Assets/JS/main.js"
+        }
+    ]
+}
