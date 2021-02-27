@@ -4,14 +4,19 @@
     "ref": "master",
     "embed": [
         {
-            "type": "htmlpage",
-            "label": "Embedded HTML page",
-            "url": "index.html"
+            "type": "js",
+            "label": "Main Js File",
+            "path": "Assets/JS/Main.js"
         },
         {
-            "type": "js",
-            "label": "Entry point",
-            "path": "Assets/JS/Main.js"
+            "type": "css",
+            "label": "SideBar css",
+            "path": "Assets/CSS/simple-sidebar.css"
+        },
+        {
+            "type": "php",
+            "label": "Main php file",
+            "path": "Assets/PHP/Index/Index.php"
         }
     ]
 }
